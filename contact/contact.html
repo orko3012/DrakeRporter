@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="author" content="Claire, Guilaume, Paracelse, Julien, Léonard, Jérôme">
 	<meta name="description" content="A définir">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="contact.css">
 	<title>DrakeRporter</title>
 </head>
 <body>
@@ -17,8 +17,13 @@
 	<main>
 		<form method="POST" action="traitement.php">
 			<p>
-				<input type="password" name="password" value="Dark ID"/>
-				<input type="e-mail" name="mail"/>
+				<div id="form">
+					<label for="password">Dark ID</label>
+					<input type="password" name="password" id="password" value="Dark ID"/><br/>
+					<input type="e-mail" name="mail" id="mail" value="Crypto-Mail"/><br/>
+					<textarea id="text">Faites-moi part de vos suggestions, remarques ou idées de prochaines expéditions... </textarea><br/>
+					<input type="button" value="Envoyer"/>
+				</div>
 			</p>
 		</form>
 		

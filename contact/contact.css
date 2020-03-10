@@ -1,0 +1,25 @@
+main{
+    background-color: rgb(32,28,28);
+    color: white;
+}
+
+
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#password, #mail, #text{
+    width: 500px;
+}
+
+#text{
+    height: 100px;
+}
+
+@media (max-width:961px){
+    #password, #mail, #text{
+        width: 300px;
+    }
+}
