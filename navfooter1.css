@@ -6,6 +6,7 @@ header{
     display:flex;
     height: 250px;
     background: linear-gradient(130deg, #EEE 45%,rgb(51,51,51) 45%);
+    font-family: 'Open Sans Condensed', sans-serif;
     
 }
 header h1{
@@ -43,6 +44,46 @@ nav ul li{
     display: flex;
     color:white;
 }
-nav ul li span{
+nav ul li a {
+    text-decoration: none;
+    color:white;
+}
+nav ul li a:hover{
+    color:rgba(172, 24, 24, 0.767);
+}
+nav ul li .icone{
     display: none;
+}
+@media screen and (max-width: 400px){
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    header{
+        width: 100%;
+        height:auto;
+        display: inline-block;
+        background: #EEE;
+    }
+    header h1{
+        width: 100%;
+        font-size: 2em;
+    }
+    header nav{
+        width: 100%;
+        background: rgb(51,51,51);
+        padding: 12px;
+    }
+    header nav ul{
+        display: flex;
+    }
+    header nav ul li .icone{
+        width: 20%;
+        display: flex;
+
+    }
+    header nav ul li .nomLi{
+        display: none;
+    }
+    
 }
