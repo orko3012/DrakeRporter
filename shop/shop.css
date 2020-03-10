@@ -10,7 +10,7 @@
 
 .grid {
     display: grid;
-    grid-template-rows: repeat(5, minmax(10px auto));
+    grid-template-rows: repeat(5, minmax(10px auto);
     grid-template-columns: repeat(2, 50%);
     grid-template-areas: 
     "category category"
