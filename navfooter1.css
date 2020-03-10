@@ -5,7 +5,7 @@
 header{
     display:flex;
     height: 250px;
-    background: linear-gradient(110deg, white 50%, rgb(51,51,51) 50%);
+    background: linear-gradient(130deg, #EEE 45%,rgb(51,51,51) 45%);
     
 }
 header h1{
@@ -13,7 +13,8 @@ header h1{
     font-size: 3rem;
     align-items: center;
     display: flex;
-    
+    margin: 0 auto 0 auto;
+    justify-content: center;
     
 }
 header h1 span{
@@ -22,7 +23,7 @@ header h1 span{
     font-family: 'Monoton', cursive;
 }
 nav{
-    width: 60%;
+    width: 50%;
 }
 nav ul{
     display: flex;
@@ -40,6 +41,7 @@ nav ul li{
     list-style-type: none;
     align-items:center;
     display: flex;
+    color:white;
 }
 nav ul li span{
     display: none;
