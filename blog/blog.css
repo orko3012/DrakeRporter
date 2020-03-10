@@ -11,21 +11,28 @@ section {
 }
 
 .articles {
-	width:90%;
+	max-width: 1600px; 
+	margin:auto;
 }
  .article {
- 	margin-bottom: 15Px;
-	background-color: #fff;
-	border: 10px black double;
-	margin:15px;
-	border-radius: 10px;
+	border: 3px black double;
+	margin:10px;
+	border-radius: 5px;
+	transition: all 0.1s ease-in 0.1s;
+
+}
+.article:hover {
+	border: 8px #555 double;
+	background-color: rgba(172,24,24,0.767);
+	letter-spacing:2px;
+	cursor:  pointer;
  }
 
  .articles_cols {
 	display:flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
  }
 
 .description {
@@ -51,18 +58,21 @@ figcaption {
 	justify-content: center;
 	color: #EEE;
 	font-weight: bold;
+	text-align: center;
 	font-size: 1,2rem;
 	background-color: rgb(51,51,51);
 	padding: 6px;
 	border-radius: 5px;
 }
 
-@media screen and (min-width:450px) {
-	.articles_cols {
-		flex-direction: row;
-	}
-}
-
 img {
 	border: 1px solid #000;
 	border-radius: 5px;
+}
+
+@media screen and (min-width:450px) {
+	.articles_cols {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+}
