@@ -9,7 +9,7 @@ main{
    color: white;
 }
 
-#flex, #text{
+#pic, #article, #text, #bouton{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,6 +17,7 @@ main{
 
 h2{
     text-align: center;
+    font-size: 40px;
 }
 
 #com{
@@ -28,4 +29,25 @@ h2{
 .comment{
     background-color: grey;
     color: black;
+    max-width: 30em;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#article{
+    max-width: 30em;
+    text-align: justify;
+    margin: auto;
+}
+
+@media (min-width: 800px){
+    #container{
+        display: flex;
+    }
+
+    #bouton{
+        align-items: flex-end;
+        padding-right: 160px;
+    }
+   
 }
