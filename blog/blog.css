@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+section {
+	display: flex;
+	justify-content:center;
+	margin-top: 30px;
+}
+
+.articles {
+	width:90%;
+}
+ .article {
+ 	margin-bottom: 15Px;
+	background-color: #fff;
+	border: 1px black solid;
+ }
+
+ .articles_cols {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+ }
+
+.description {
+	text-align: center;
+	overflow: hidden;
+	white-space: pre-wrap;
+	height: 95px;
+}
+
+figure {
+	width:375px;
+	height: 520px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+
+
+ figcaption {
+	 display: flex;
+	 justify-content: center;
+ }
