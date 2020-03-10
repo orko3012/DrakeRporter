@@ -3,38 +3,38 @@
     padding: 0px;
 }
 header{
-    display:flex;
-    height: 200px;
-    background: linear-gradient(130deg, #EEE 45%,rgb(51, 51, 51) 45%);
+    width: 100%;
+    height:auto;
+    display: inline-block;
+    background: #EEE;
     font-family: 'Open Sans Condensed', sans-serif;
     border-radius: 0px 0px 20px 20px;
-    
 }
 header h1{
-    width: 50%;
-    font-size: 4rem;
+    width: 100%;
+    font-size: 2em;
     align-items: center;
     display: flex;
     margin: 0 auto 0 auto;
     justify-content: center;
-    
 }
 header h1 span{
     color: rgba(172, 24, 24, 0.767);
     font-size: 130%;
     font-family: 'Monoton', cursive;
 }
-nav{
-    width: 50%;
+header nav{
+    width: 100%;
+    background: rgb(51,51,51);
+    padding: 12px;
 }
-nav ul{
+header nav ul{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
     height: 100%;
-    
 }
 nav ul li{
     padding-top: ;
@@ -45,72 +45,49 @@ nav ul li{
     display: flex;
     color:white;
 }
-nav ul li a {
-    text-decoration: none;
-    color:white;
+header nav ul li a{
+    width: 20%;
+    color: #EEE
+
 }
 nav ul li a:hover{
     color:rgba(172, 24, 24, 0.767);
 }
-nav ul li .icone{
+header nav ul li .nomLi{
     display: none;
 }
 /*nav ul #lienHome{
     background-color:rgba(172, 24, 24, 0.767);
-    padding-right: 10px;
-    padding-left: 10px;
+    padding: 6px;
     border-radius:6px;
 }
-nav ul #lienHome a:hover{
-    color: rgb(51, 51, 51);
+nav ul #lienHome:hover a{
+    color:rgb(51, 51, 51);
 }*/
-main{
-    height: 600px;
-}
-body{
-    background-color:rgb(32, 28, 28);
-}
 
-section{
-    padding: 50px;
-    margin: 50px;
-    background-color: rgb(51, 51, 51);
-    border: 2px solid rgba(172, 24, 24, 0.767);
-    border-radius: 20px;
-}
-section p{
-    color:#EEE;
-}
+
 footer{
     font-family: 'Open Sans Condensed', sans-serif;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 0px;
     background-color:rgb(51, 51, 51);
-    padding: 30px;
 }
-footer .pourGauche{
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
 footer .gauche{
     display: flex;
-    align-items: end;
-    margin-right: 50px;
-    flex-wrap: wrap;
-    flex-direction: column;
-
-}
-footer .droite{
-    display: flex;
-    text-align: end;
+    align-items: center;
+    text-align: center;
     justify-content: space-around;
-    flex-wrap: wrap;
     flex-direction: column;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.pourGauche{
+    width: 100%;
 }
 footer .gauche i{
     text-decoration: none;
@@ -118,81 +95,121 @@ footer .gauche i{
     padding: 5px;
     font-size: 2rem;
 }
-footer .gauche i:hover, footer .droite a:hover{
-    color: rgba(172, 24, 24, 0.767);
+footer .droite{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
 }
 footer .droite a{
     text-decoration: none;
     color: #EEE;
     padding: 5px;
 }
-@media screen and (max-width: 400px){
-    *{
-        margin: 0px;
-        padding: 0px;
-    }
+footer .gauche i:hover, footer .droite a:hover{
+    color: rgba(172, 24, 24, 0.767);
+}
+@media screen and (min-width: 961px){
     header{
-        width: 100%;
-        height:auto;
-        display: inline-block;
-        background: #EEE;
+        display:flex;
+        height: 200px;
+        background: linear-gradient(130deg, #EEE 37%,rgb(51, 51, 51) 37%);
+        
+        
+        
     }
     header h1{
-        width: 100%;
-        font-size: 2em;
+        width: 60%;
+        font-size: 4rem;
+        
+        
     }
-    header nav{
-        width: 100%;
-        background: rgb(51,51,51);
-        padding: 12px;
+    header nav {
+        background: none;
     }
-    header nav ul{
+    nav{
+        width: 40%;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+        
+    }
+    nav ul li a .nomLi{
         display: flex;
     }
-    header nav ul li .icone{
-        width: 20%;
+    nav ul li{
+        padding-top: ;
+        font-size: 2.5rem;
+        height: 100%;
+        list-style-type: none;
+        align-items:center;
         display: flex;
-
+        color:white;
     }
-    header nav ul li .nomLi{
+    nav ul li a {
+        text-decoration: none;
+        color:white;
+    }
+    nav ul li .icone{
         display: none;
     }
     /*nav ul #lienHome{
         background-color:rgba(172, 24, 24, 0.767);
-        padding: 6px;
+        padding-right: 10px;
+        padding-left: 10px;
         border-radius:6px;
     }
-    nav ul #lienHome:hover a{
-        color:rgb(51, 51, 51);
+    nav ul #lienHome a:hover{
+        color: rgb(51, 51, 51);
     }*/
     footer{
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        flex-direction: column-reverse;
-        width: 100%;
-        padding: 0px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 30px;
+        flex-direction: row;
+        
     }
+    footer .pourGauche{
+        width: 30%;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: left;
+    }
+    
     footer .gauche{
         display: flex;
         align-items: center;
-        text-align: center;
-        justify-content: space-around;
-        flex-direction: column;
-        width: 100%;
-        padding: 0px;
-        margin: 0px;
-    }
-    .pourGauche{
-        width: 100%;
+        margin-right: 0px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: stretch;
+    
     }
     footer .droite{
         display: flex;
-        align-items: center;
-        text-align: center;
+        text-align: end;
         justify-content: space-around;
-        flex-direction: column;
-        width: 100%;
-        padding: 0px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 65%;
     }
+    footer .gauche i{
+        text-decoration: none;
+        color: #EEE;
+        padding: 5px;
+        font-size: 2rem;
+    }
+    
 }
