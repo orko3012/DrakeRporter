@@ -4,6 +4,52 @@
     box-sizing: border-box;
 }
 
-.carousel {
+.carousel, .img5 {
     display: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: repeat(5, minmax(10px auto));
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: 
+    "category category"
+    "filter result"
+    "i1 i2"
+    "i3 i4"
+    "buttonmore  buttonmore";
+    place-items: center;
+}
+
+.category {
+    grid-area: category;
+    
+}
+
+.filter {
+    grid-area: filter;
+}
+
+.result {
+    grid-area: result;
+}
+
+.img1 {
+    grid-area: i1;
+}
+
+.img2 {
+    grid-area: i2;
+}
+
+.img3 {
+    grid-area: i3;
+}
+
+.img4 {
+    grid-area: i4;
+}
+
+button {
+    grid-area: buttonmore;
 }
