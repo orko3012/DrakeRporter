@@ -53,3 +53,27 @@
 button {
     grid-area: buttonmore;
 }
+
+@media screen and (min-width: 400px) {
+    .grid {
+        grid-template-rows: repeat(4, auto));
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        place-items: center;
+        grid-template-areas: 
+        "carousel carousel carousel carousel carousel"
+        "category category . filter result"
+        "i1 i2 i3 i4 i5"
+        ". . buttonmore . .";
+    }
+
+    .carousel {
+        display: block;
+        grid-area: carousel;
+    }
+    
+    .img5 {
+        grid-area: i5;
+        display: block;
+    }
+}
+
