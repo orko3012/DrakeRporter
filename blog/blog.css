@@ -16,11 +16,14 @@ section {
  .article {
  	margin-bottom: 15Px;
 	background-color: #fff;
-	border: 1px black solid;
+	border: 10px black double;
+	margin:15px;
+	border-radius: 10px;
  }
 
  .articles_cols {
 	display:flex;
+	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: space-around;
  }
@@ -30,20 +33,36 @@ section {
 	overflow: hidden;
 	white-space: pre-wrap;
 	height: 95px;
+	background-color: #EEE;
 }
 
 figure {
-	width:375px;
+	width: 375px;
 	height: 520px;
 	padding: 10px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	background-color: #EEE;
 }
 
+figcaption {
+	display: flex;
+	justify-content: center;
+	color: #EEE;
+	font-weight: bold;
+	font-size: 1,2rem;
+	background-color: rgb(51,51,51);
+	padding: 6px;
+	border-radius: 5px;
+}
 
+@media screen and (min-width:450px) {
+	.articles_cols {
+		flex-direction: row;
+	}
+}
 
- figcaption {
-	 display: flex;
-	 justify-content: center;
- }
+img {
+	border: 1px solid #000;
+	border-radius: 5px;
