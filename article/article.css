@@ -13,12 +13,12 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 h2{
     text-align: center;
     font-size: 40px;
+    color: palevioletred;
 }
 
 #com{
@@ -29,7 +29,7 @@ h2{
 
 .comment{
     background-color: grey;
-    color: black;
+    color: greenyellow;
     max-width: 30em;
     border-radius: 15px;
     text-align: center;
@@ -42,14 +42,17 @@ h2{
     margin: auto;
 }
 
-@media (min-width: 401px){
+@media (min-width: 900px){
     #container{
         display: flex;
     }
 
     #bouton{
         align-items: flex-end;
-        padding-right: 145px;
+        padding-right: 120px;
+    }
+    #pic{
+        padding-left: 200px;
     }
    
 }
