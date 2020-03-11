@@ -1,10 +1,11 @@
+/*css shop*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.carousel, .img5 {
+.carousel, .img5, .menu_cat_mobile {
     display: none;
 }
 
@@ -14,23 +15,20 @@
     grid-template-columns: repeat(2, 50%);
     grid-template-areas: 
     "category category"
-    "filter result"
+    "filter filter"
     "i1 i2"
     "i3 i4"
-    "buttonmore  buttonmore";
+    "link_read link_read";
     place-items: center;
 }
 
-.category {
+
+.menu_cat {
     grid-area: category;
 }
 
 .filter {
     grid-area: filter;
-}
-
-.result {
-    grid-area: result;
 }
 
 .img1 {
@@ -49,8 +47,9 @@
     grid-area: i4;
 }
 
-button {
-    grid-area: buttonmore;
+.link_read {
+    grid-area:
+    link_read;
 }
 
 /*Desktop version*/
@@ -62,9 +61,9 @@ button {
         place-items: center;
         grid-template-areas: 
         "carousel carousel carousel carousel carousel"
-        "category category . filter result"
+        "category category . filter filter"
         "i1 i2 i3 i4 i5"
-        ". . buttonmore . .";
+        ". . link_read . .";
         padding: 0 40px;
     }
 
@@ -109,4 +108,225 @@ button {
     
     
 }
+/* css header and footer*/
 
+header{
+    width: 100%;
+    height:auto;
+    display: inline-block;
+    background: #EEE;
+    font-family: 'Open Sans Condensed', sans-serif;
+    border-radius: 0px 0px 20px 20px;
+}
+header h1{
+    width: 100%;
+    font-size: 2em;
+    align-items: center;
+    display: flex;
+    margin: 0 auto 0 auto;
+    justify-content: center;
+}
+header h1 span{
+    color: rgba(172, 24, 24, 0.767);
+    font-size: 130%;
+    font-family: 'Permanent Marker', cursive;
+}
+header nav{
+    width: 100%;
+    background: rgb(51,51,51);
+    padding: 12px;
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+nav ul li{
+    font-size: 2.5rem;
+    height: 100%;
+    list-style-type: none;
+    align-items:center;
+    display: flex;
+    color:white;
+}
+header nav ul li a{
+    width: 20%;
+    color: #EEE
+
+}
+nav ul li a:hover{
+    color:rgba(172, 24, 24, 0.767);
+}
+header nav ul li .nomLi{
+    display: none;
+}
+nav ul #lienE-shop{
+    background-color:rgba(172, 24, 24, 0.767);
+    padding: 6px;
+    border-radius:6px;
+}
+nav ul #lienE-shop:hover a{
+    color:rgb(51, 51, 51);
+}
+
+
+footer{
+    font-family: 'Open Sans Condensed', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 0px;
+    background-color:rgb(51, 51, 51);
+}
+footer .gauche{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.pourGauche{
+    display: flex;
+    width: 30%;
+    flex-direction: row;
+
+}
+footer .gauche i{
+    text-decoration: none;
+    color: #EEE;
+    padding: 5px;
+    font-size: 2rem;
+}
+footer .droite{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+    
+}
+footer .droite a{
+    text-decoration: none;
+    color: #EEE;
+    padding: 5px;
+    font-size: 1rem;
+}
+footer .gauche i:hover, footer .droite a:hover{
+    color: rgba(172, 24, 24, 0.767);
+}
+@media screen and (min-width: 961px){
+    header{
+        display:flex;
+        height: 200px;
+        background: linear-gradient(130deg, #EEE 37%,rgb(51, 51, 51) 37%);
+        
+        
+        
+    }
+    header h1{
+        width: 60%;
+        font-size: 4rem;
+        
+        
+    }
+    header nav {
+        background: none;
+    }
+    nav{
+        width: 40%;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+        
+    }
+    nav ul li a .nomLi{
+        display: flex;
+    }
+    nav ul li a #shop{
+        width: 100px;
+    }
+    nav ul li{
+        font-size: 2.5rem;
+        height: 100%;
+        list-style-type: none;
+        align-items:center;
+        display: flex;
+        color:white;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color:white;
+    }
+    nav ul li .icone{
+        display: none;
+    }
+    nav ul #lienE-shop{
+        background-color:rgba(172, 24, 24, 0.767);
+        padding-right: 10px;
+        padding-left: 10px;
+        border-radius:6px;
+    }
+    nav ul #lienE-shop a:hover{
+        color: rgb(51, 51, 51);
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 30px;
+        flex-direction: row;
+        
+    }
+    footer .pourGauche{
+        width: 30%;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: left;
+    }
+    
+    footer .gauche{
+        display: flex;
+        align-items: center;
+        margin-right: 0px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: stretch;
+    
+    }
+    footer .droite{
+        display: flex;
+        text-align: end;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 65%;
+    }
+    footer .droite a{
+        font-size: 1rem;
+    }
+    footer .gauche i{
+        text-decoration: none;
+        color: #EEE;
+        padding: 5px;
+        font-size: 2rem;
+    }
+    
+}
