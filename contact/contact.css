@@ -138,6 +138,27 @@ main{
     height: 100px;
 }
 
+.butt{
+    display: block;
+    padding:10px 20px;
+    border: 3px solid #FFFFFF;
+    margin: 0 auto 5%;
+    border-radius:2px;
+    text-decoration:none;
+    font-weight:300;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.2s;
+    width: fit-content;
+    width: -moz-fit-content;
+    background-color: none;
+}
+
+.butt:hover {
+    color:#000000;
+    background-color:#FFFFFF;
+    }
+
 @media screen and (max-width:961px){
     #password, #mail, #text, #selector{
         width: 300px;
