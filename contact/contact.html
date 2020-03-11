@@ -17,12 +17,20 @@
 	<main>
 		<form method="POST" action="traitement.php">
 			<p>
-				<div id="form">
+				<div id="form"><br/>
 					<label for="password">Dark ID</label>
 					<input type="password" name="password" id="password" value="Dark ID"/><br/>
 					<input type="e-mail" name="mail" id="mail" value="Crypto-Mail"/><br/>
-					<textarea id="text">Faites-moi part de vos suggestions, remarques ou idées de prochaines expéditions... </textarea><br/>
-					<input type="button" value="Envoyer"/>
+					<label for="selector">Objet de votre message</label>
+					<select name="selector" id="selector">
+						<option value="xx">Suggestion</option>
+						<option value="yy">Réclamation</option>
+						<option value="rr">Remarque</option>
+						<option value="vv">Question</option>
+						<option value="autre">Autre</option>
+					</select><br/>
+					<textarea id="text">Votre message</textarea><br/>
+					<input type="button" value="Envoyer"/><br/>
 				</div>
 			</p>
 		</form>

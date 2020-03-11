@@ -10,7 +10,7 @@ main{
     align-items: center;
 }
 
-#password, #mail, #text{
+#password, #mail, #text, #selector{
     width: 500px;
 }
 
@@ -19,7 +19,7 @@ main{
 }
 
 @media (max-width:961px){
-    #password, #mail, #text{
+    #password, #mail, #text, #selector{
         width: 300px;
     }
 }
