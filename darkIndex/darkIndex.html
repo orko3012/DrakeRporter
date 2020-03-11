@@ -2,23 +2,92 @@
 <html lang="fr">
 <head>
 	<meta charset="UTF-8">
-	<meta name="author" content="Claire, Guilaume, Paracelse, Julien, Léonard, Jérôme">
+	<meta name="author" content="Claire Kodia, Guillaume Del Vecchio, Paracelse Itoua, Julien Rousseau, Léonard Fonteneau, Jérôme Potié, Stéphane Bour">
 	<meta name="description" content="A définir">
-	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="darkIndex.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet"> 
 	<title>DrakeRporter</title>
 </head>
 <body>
 	<header>
-		<h1>Drake R. Porter</h1>
+			<h1 id="top">Dark<span>R</span>eporter</h1> 
 		<nav>
-			
+			<ul>
+                <li id="lienHome"><a href="#top" title="home" alt="go home"><span class="nomLi">Accueil</span> <span class="icone"><i class="fas fa-home"></i></span></a></li>
+                <li id="lienBlog"><a href="../blog/blog.html"  title="Blog" alt="go Blog"><span class="nomLi">Blog</span> <span class="icone"><i class="fas fa-camera"></i></span></a></li>
+                <li id="lienE-shop"><a href="../shop/shop.html" title="E-shop" alt="go E-shop"><span id ="shop" class="nomLi"> E-shop</span> <span class="icone"><i class="fas fa-cart-arrow-down"></i></span></a></li>
+                <li id="lienContact"><a href="../contact/contact.html"  title="Contact" alt="go Contact"><span class="nomLi">Contact</span> <span class="icone"><i class="far fa-edit"></i></span></a></li>
+            </ul>
 		</nav>
 	</header>
 	<main>
-		
+		<section id="bio-container">
+			<h1>A propos</h1>
+			<h2>Nom</h2>
+			<img src="http://via.placeholder.com/300">
+            <p>Donec libero. Quisque vitae est quis dui bibendum suscipit. Fusce leo felis, sagittis non, vehicula
+                    ac, ultricies vitae, diam. Aenean congue libero et metus. Nulla convallis libero a lacus. Donec
+                    hendrerit lorem sit amet leo. Mauris libero. Pellentesque pulvinar molestie dolor. Proin nibh
+                    mauris, ornare at, pretium sit amet, porttitor vel, mi. Pellentesque habitant morbi tristique
+                    senectus et netus et malesuada fames ac turpis egestas. Aliquam a nulla. Suspendisse suscipit. Etiam
+                    lectus ante, interdum sit amet, euismod venenatis, condimentum eu, urna. Etiam at turpis. Cras quis
+                    ligula. Cras varius, sapien non pellentesque bibendum, mauris wisi sodales sem, ac commodo mauris
+                    neque non felis. Sed sollicitudin tincidunt arcu. Nullam vel lectus sit amet magna tincidunt tempor.
+                    Phasellus a ante. Donec et diam. Aenean laoreet aliquam orci. Nunc interdum elementum urna. Quisque
+                    erat. Nullam tempor neque. Maecenas velit nibh, scelerisque a, consequat ut, viverra in, enim. Duis
+                    magna. Donec odio neque, tristique et, tincidunt eu, rhoncus ac, nunc. Mauris malesuada malesuada
+                    elit. Etiam lacus mauris, pretium vel, blandit in, ultricies id, libero. Phasellus bibendum erat ut
+                    diam. In congue imperdiet lectus.</p>
+		</section>
+
+		<hr>
+
+		<section>
+			<h1>Derniers articles</h1>
+			<div class="article-container">
+				<article class="article-item"></article>
+				<article class="article-item"></article>
+				<article class="article-item"></article>
+			</div>
+			<a href="../blog/blog.html" class="button">Voir plus</a>
+		</section>
+
+		<hr>
+
+		<section>
+			<h1>Derniers arrivages</h1>
+			<div class="article-container">
+				<article class="article-item"></article>
+				<article class="article-item"></article>
+				<article class="article-item"></article>
+			</div>
+			<a href="../shop/shop.html" class="button">Voir plus</a>
+		</section>
+
 	</main>
 	<footer>
-		
+		<div class="pourGauche">
+			<div class="gauche">
+				<i class="fab fa-facebook-square"></i>
+				
+			</div>
+			<div class="gauche">
+				<i class="fab fa-twitter-square"></i>
+				
+			</div>
+			<div class="gauche">
+				<i class="fab fa-instagram"></i>
+			</div>
+		</div>
+		<div class="droite">
+			<a href="#top"  title="Home" alt="go Home">Accueil</a>
+			<a href="../blog/blog.html"  title="Blog" alt="go Blog">Blog</a>
+			<a href="../shop/shop.html"  title="E-shop" alt="go E-shop">E-shop</a>
+			<a href="../contact/contact.html"  title="Contact" alt="go Contact">Contact</a>
+		</div>
 	</footer>
 </body>
 </html>
