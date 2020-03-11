@@ -8,6 +8,10 @@ body {
     background-color: #636468;
 }
 
+main {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
 hr {
     width: 80%;
     display: block;
