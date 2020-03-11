@@ -34,7 +34,7 @@ header h1{
 header h1 span{
     color: rgba(172, 24, 24, 0.767);
     font-size: 130%;
-    font-family: 'Monoton', cursive;
+    font-family: 'Permanent Marker', cursive;
 }
 header nav{
     width: 100%;
@@ -149,6 +149,7 @@ a.button {
     text-align:center;
     transition: all 0.2s;
     width: fit-content;
+    width: -moz-fit-content;
     }
 
     a.button:hover {
@@ -248,6 +249,10 @@ footer .gauche i:hover, footer .droite a:hover{
         display: flex;
     }
 
+    nav ul li a #shop{
+        width: 100px;
+    }
+
     nav ul li{
         font-size: 2.5rem;
         height: 100%;
@@ -315,6 +320,7 @@ footer .gauche i:hover, footer .droite a:hover{
         flex-direction: row;
         
     }
+
     footer .pourGauche{
         width: 30%;
         display: flex;
@@ -333,6 +339,7 @@ footer .gauche i:hover, footer .droite a:hover{
         justify-content: stretch;
     
     }
+
     footer .droite{
         display: flex;
         text-align: end;
@@ -341,9 +348,11 @@ footer .gauche i:hover, footer .droite a:hover{
         flex-direction: row;
         width: 65%;
     }
-    footer .droite a{
+
+    footer .droite a {
         font-size: 1rem;
     }
+
     footer .gauche i{
         text-decoration: none;
         color: #EEE;
