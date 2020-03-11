@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #636468;
+}
+
+hr {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
 /*-----------header & nav -------------*/
 header{
     width: 100%;
@@ -83,6 +93,7 @@ h1 {
     "picture"
     "description";
     justify-items: center;
+    margin-bottom: 5%;
 }
 
 #bio-container h1 {
@@ -122,9 +133,28 @@ h1 {
     margin: 5px 0;
 }
 
-section h1{
+section h1 {
     text-align: center;
 }
+
+a.button {
+    display: block;
+    padding:10px 20px;
+    border: 3px solid #FFFFFF;
+    margin: 0 auto 5%;
+    border-radius:2px;
+    text-decoration:none;
+    font-weight:300;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.2s;
+    width: fit-content;
+    }
+
+    a.button:hover {
+    color:#000000;
+    background-color:#FFFFFF;
+    }
 
 
 /*-----------footer---------*/
