@@ -248,15 +248,16 @@ footer .gauche i:hover, footer .droite a:hover{
     #bio-container{
         grid-template: repeat(3, auto) / 30% 70%;
         grid-template-areas: 
-        "bio . "
+        "bio bio "
         "picture name"
         "picture description";
     }
 
-    #bio-container h1, #bio-container h2, #bio-container p {
+    #bio-container h2, #bio-container p {
         justify-self: flex-start;
         margin-left: 5%;
     }
+
     #bio-container p {
         height: auto;
     }
@@ -265,16 +266,11 @@ footer .gauche i:hover, footer .droite a:hover{
         margin-top: 0;
     }
 
+
     .article-container {
         justify-content: space-around;
-        flex-wrap: wrap;
-        /*padding: 0px 4px 20px;*/
+        flex-direction: row;
     }
-
-    .article-item {
-        
-    }
-    */
 
 
     /*-------------footer---------------*/
