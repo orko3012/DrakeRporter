@@ -70,6 +70,41 @@ nav ul #lienHome:hover a{
 
 /*-----------Body-----------*/
 
+#bio-container{
+    display: grid;
+    grid-template: repeat(4, auto) / 100% ;
+    grid-template-areas: 
+    "bio"
+    "name"
+    "picture"
+    "description";
+    justify-items: center;
+}
+
+#bio-container h1 {
+    grid-area: bio;
+    margin: 5% 0;
+}
+
+#bio-container h2 {
+    grid-area: name;
+}
+
+#bio-container img {
+    grid-area: picture;
+    margin: 5% 0;
+}
+
+#bio-container p {
+    grid-area: description;
+    width: 80%;
+    text-align: justify;
+    font-size: 1rem;
+    margin: 5% 0;
+    height: 500px;
+    overflow-y: scroll;
+}
+
 .article-container {
     border-bottom: 1px solid black;
     padding: 0px 8px 50px;
