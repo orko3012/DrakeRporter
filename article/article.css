@@ -159,6 +159,27 @@ h2{
     color:rgb(51, 51, 51);
 }
 
+.butt{
+    display: block;
+    padding:10px 20px;
+    border: 3px solid #FFFFFF;
+    margin: 0 auto 5%;
+    border-radius:2px;
+    text-decoration:none;
+    font-weight:300;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.2s;
+    width: fit-content;
+    width: -moz-fit-content;
+    background-color: none;
+}
+
+.butt:hover {
+    color:#000000;
+    background-color:#FFFFFF;
+    }
+
 @media screen and (min-width: 961px){
     header{
         display:flex;
