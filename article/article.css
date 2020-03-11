@@ -270,8 +270,9 @@ h2{
     }
 
     #bouton{
-        align-items: flex-end;
         padding-right: 120px;
+        flex-direction: row;
+        padding-left: 80%;
     }
     #pic{
         padding-left: 200px;
