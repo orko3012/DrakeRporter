@@ -87,7 +87,10 @@ footer .gauche{
     margin: 0px;
 }
 .pourGauche{
-    width: 100%;
+    display: flex;
+    width: 30%;
+    flex-direction: row;
+
 }
 footer .gauche i{
     text-decoration: none;
@@ -103,11 +106,13 @@ footer .droite{
     flex-direction: column;
     width: 100%;
     padding: 0px;
+    
 }
 footer .droite a{
     text-decoration: none;
     color: #EEE;
     padding: 5px;
+    font-size: 1rem;
 }
 footer .gauche i:hover, footer .droite a:hover{
     color: rgba(172, 24, 24, 0.767);
@@ -204,6 +209,9 @@ footer .gauche i:hover, footer .droite a:hover{
         flex-wrap: wrap;
         flex-direction: row;
         width: 65%;
+    }
+    footer .droite a{
+        font-size: 1rem;
     }
     footer .gauche i{
         text-decoration: none;
