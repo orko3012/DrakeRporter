@@ -133,14 +133,15 @@ main{
 
 h2{
     text-align: center;
-    font-size: 40px;
+    font-size: 55px;
     color: rgba(172, 24, 24, 0.767);
 }
 
 #com{
    display: flex;
    justify-content: space-between;
-   flex-direction: column; 
+   flex-direction: column;
+   padding-left: 20px;
 }
 
 .comment{
