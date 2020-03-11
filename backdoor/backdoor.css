@@ -1,0 +1,54 @@
+body {
+    width: 100%;
+    background-color: black;
+}
+
+div  {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+h1 {
+    font-family: 'Skranji', cursive;
+    color: rgba(172, 24, 24, 0.767);
+    font-size: 60px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    height: 200px;
+}
+p{
+    font-size: 30px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+}
+
+p:first-of-type{
+    margin-bottom: -10px;
+}
+
+input{
+    margin-bottom: 12px;
+}
+#password{
+    height: 20px;
+    text-align: center;
+}
+button {
+    font-family: 'Open Sans Condensed', sans-serif;
+    width: 100px;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
