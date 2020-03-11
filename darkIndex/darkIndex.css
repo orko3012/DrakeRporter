@@ -236,6 +236,26 @@ footer .gauche i:hover, footer .droite a:hover{
     }
 
     /*-------------Body---------------*/
+    #bio-container{
+        grid-template: repeat(3, auto) / 30% 70%;
+        grid-template-areas: 
+        "bio . "
+        "picture name"
+        "picture description";
+    }
+
+    #bio-container h1, #bio-container h2, #bio-container p {
+        justify-self: flex-start;
+        margin-left: 5%;
+    }
+    #bio-container p {
+        height: auto;
+    }
+
+    #bio-container img{
+        margin-top: 0;
+    }
+
     .article-container {
         flex-direction: column;
         align-items: center;
