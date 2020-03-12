@@ -1,4 +1,7 @@
 /*-------------Shop CSS-------------*/
+
+/*-------------Mobile version-------------*/
+
 * {
     margin: 0;
     padding: 0;
@@ -64,12 +67,13 @@
 
 @media screen and (min-width: 961px) {
     .grid {
-        grid-template-rows: repeat(4, auto);
+        grid-template-rows: repeat(5, auto);
         grid-template-columns: repeat(4, 20%);
         place-items: center;
         grid-template-areas: 
         "carousel carousel carousel carousel carousel"
-        "category category category filter filter"
+        "category category category category filter"
+        ". . . operate shopping"
         "i1 i2 i3 i4 i5"
         ". . link_read . .";
         padding: 0 40px;
@@ -92,7 +96,7 @@
 
     .menu_cat_desktop ul{
         list-style-type: none;
-        align-items:center;
+        align-items: center;
         display: flex;
         justify-content: space-around;
     }
