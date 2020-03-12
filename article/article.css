@@ -139,7 +139,7 @@ body{
 h2{
     text-align: center;
     font-size: 55px;
-    color: rgba(172, 24, 24, 0.767);
+    color: #EEE /* former color rgba(172, 24, 24, 0.767);*/
 }
 
 #com{
@@ -310,11 +310,15 @@ h2{
         display: none;
     }
 
+
     #article p {
         width: 900px;
         margin-top: 5%;
-        font-size: 2rem;
-        color: #EEE;
+        font-size: 16px;
+        background-color: #EEE;
+        border: 4px black double;
+        border-radius: 5px;
+        padding: 20px 25px
     }
 
     .galerie_grid {
