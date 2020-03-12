@@ -90,12 +90,11 @@ h1 {
 
 #bio-container{
     display: grid;
-    grid-template: repeat(4, auto) / 100% ;
+    grid-template: repeat(3, auto) / 100% ;
     grid-template-areas: 
     "bio"
-    "name"
     "picture"
-    "description";
+    "namedescription";
     justify-items: center;
     margin-bottom: 5%;
 }
@@ -104,23 +103,37 @@ h1 {
     grid-area: bio;
 }
 
-#bio-container h2 {
-    grid-area: name;
-}
-
 #bio-container img {
     grid-area: picture;
     margin: 5% 0;
 }
 
-#bio-container p {
-    grid-area: description;
-    width: 80%;
+#bio-container div {
+    grid-area: namedescription;
+    width: 280px;
+    border: 4px black double;
+    border-radius: 5px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #EEE;
+}
+
+#bio-container div p {
     text-align: justify;
     font-size: 1rem;
-    margin: 2% 0 5%;
+    margin: 5% 0;
     height: 300px;
     overflow-y: scroll;
+}
+
+#bio-container div h2 {
+    text-align: center;
+    margin: 3% 0;
+    background-color: rgb(51,51,51);
+    color: #EEE;
+	padding: 6px 3px;
+    border-radius: 5px;
 }
 
 .article-container {
@@ -137,7 +150,7 @@ h1 {
     transition: all 0.2s ease-in 0.2s;
 }
 
-
+/*a mettre dna sl aprtie desktop*/
 .article-item:hover {
 	border: 8px #555 double;
 	background-color: rgba(172,24,24,0.767);
@@ -344,19 +357,27 @@ footer .gauche i:hover, footer .droite a:hover{
     /*-------------Body---------------*/
     
     #bio-container{
-        grid-template: repeat(3, auto) / 30% 70%;
+        grid-template: repeat(2, auto) / 30% 70%;
         grid-template-areas: 
         "bio bio "
-        "picture name"
-        "picture description";
+        "picture namedescription";
+        width: 90%;
+        margin: auto;
+        margin-bottom: 5%;
     }
 
-    #bio-container h2, #bio-container p {
+    #bio-container div {
         justify-self: flex-start;
+        height: auto;
+        width: auto;
     }
 
-    #bio-container p {
-        height: auto;
+    #bio-container div p {
+        overflow: visible;
+    }
+
+    #bio-container div h2 {
+        margin-bottom: 0;
     }
 
     #bio-container img{
