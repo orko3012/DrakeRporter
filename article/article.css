@@ -185,6 +185,10 @@ h2{
     background-color:#FFFFFF;
     }
 
+.galerie_grid {
+    display: none;
+}
+
 @media screen and (min-width: 961px){
     header{
         display:flex;
@@ -298,8 +302,56 @@ h2{
         flex-direction: row;
         padding-left: 80%;
     }
+
+    /*------Code added by Claire as a suggestion for the images----*/
     #pic{
-        padding-left: 200px;
+        display: none;
+    }
+
+    #article p {
+        width: 900px;
+        margin-top: 5%;
+        font-size: 2rem;
+        color: #EEE;
+    }
+
+    .galerie_grid {
+        display: grid;
+        grid-template-areas: 
+        "PE PM PM"
+        "PG PM PM"
+        "PG PFo PFi"
+        "PG PB PFi";
+        justify-items: center;
+        align-items: center;
+        margin: auto;
+        height: 550px;
+        width: 900px;
+    }
+
+    .galerie_grid img:nth-of-type(1) {
+        grid-area: PE;
+    }
+
+    .galerie_grid img:nth-of-type(2) {
+        grid-area: PM;
+    }
+
+    .galerie_grid img:nth-of-type(3) {
+        grid-area: PFi;
+    }
+
+    .galerie_grid img:nth-of-type(4) {
+        grid-area: PFo;
+    }
+
+    .galerie_grid img:nth-of-type(5) {
+        grid-area: PG;
+    }
+
+    .galerie_grid img:nth-of-type(6) {
+        grid-area: PB;
     }
    
+    /*------ End of Code added by Claire for the grid ---*/
 }
