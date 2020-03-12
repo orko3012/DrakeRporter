@@ -147,18 +147,10 @@ h1 {
     margin: 5px 0;
     border: 4px black double;
     border-radius: 5px;
-    transition: all 0.2s ease-in 0.2s;
 }
 
-/*a mettre dna sl aprtie desktop*/
-.article-item:hover {
-	border: 8px #555 double;
-	background-color: rgba(172,24,24,0.767);
-	letter-spacing:2px;
-	cursor: pointer;
- }
 
- .description {
+.description {
 	text-align: center;
 	overflow: hidden;
 	white-space: pre-wrap;
@@ -389,6 +381,17 @@ footer .gauche i:hover, footer .droite a:hover{
         justify-content: space-around;
         flex-direction: row;
     }
+
+    .article-item {
+        transition: all 0.2s ease-in 0.2s;
+    }
+    
+    .article-item:hover {
+        border: 8px #555 double;
+        background-color: rgba(172,24,24,0.767);
+        letter-spacing:2px;
+        cursor: pointer;
+     }
 
 
     /*-------------footer---------------*/
