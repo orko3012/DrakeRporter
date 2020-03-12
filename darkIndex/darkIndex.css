@@ -154,6 +154,10 @@ figure a {
     color: rgb(51, 51, 51);
 }
 
+figure a:hover {
+	text-decoration: underline;
+}
+
 .description {
 	text-align: center;
 	overflow: hidden;
