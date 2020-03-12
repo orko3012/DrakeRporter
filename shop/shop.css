@@ -11,9 +11,10 @@
 
 .grid {
     display: grid;
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(6, auto);
     grid-template-columns: repeat(2, 50%);
     grid-template-areas: 
+    "operate shopping"
     "category category"
     "filter filter"
     "i1 i2"
@@ -22,6 +23,13 @@
     place-items: center;
 }
 
+.operate {
+    grid-area: operate;
+}
+
+.shopping {
+    grid-area: shopping;
+}
 
 .menu_cat {
     grid-area: category;
@@ -112,8 +120,38 @@ display: inline;
         height: auto;
         overflow: hidden; 
     }
-    
-    
+    /*Menu categorie : marchandises*/
+
+    .menu_cat_desktop ul{
+        list-style-type: none;
+    }
+
+    .menu_cat_desktop li{
+        float: left;
+        width: 25%;
+        text-align: center;
+    }
+
+    .menu_cat_desktop a{
+        display: inline-flex;
+        text-decoration: none;
+        color: #000000;
+        border-bottom: 2px solid transparent;
+        padding: 10px 0px;
+
+    }
+
+    .menu_cat_desktop a:hover{
+        color: orange;
+        border-bottom: 2px solid gold;
+    }
+
+.menu_cat_desktop{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0px;
 }
 /* css header and footer*/
 
@@ -284,7 +322,7 @@ footer .gauche i:hover, footer .droite a:hover{
     }
     nav ul #lienE-shop{
         background-color:rgba(172, 24, 24, 0.767);
-        padding-right: 10px;
+        padding-right: 28px;
         padding-left: 10px;
         border-radius:6px;
     }
