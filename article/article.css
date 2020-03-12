@@ -123,6 +123,11 @@ footer .gauche i:hover, footer .droite a:hover{
 main{
    background-color:#636468; 
    color: #EEE;
+   padding-bottom: 3%;
+}
+
+body{
+    background-color:#636468;
 }
 
 #pic, #article, #text, #bouton{
