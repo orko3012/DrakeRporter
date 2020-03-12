@@ -202,9 +202,17 @@ h2{
     header h1{
         width: 60%;
         font-size: 4rem;
-        
-        
     }
+
+    #com{
+        align-items: flex-start;
+    }
+
+    .comment{
+        margin-left: 40px;
+        min-width: 40em;
+    }
+        
     header nav {
         background: none;
     }
