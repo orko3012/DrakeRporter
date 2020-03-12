@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-.carousel, .img5, .menu_cat_mobile {
+.carousel, .img5, .menu_cat_desktop {
     display: none;
 }
 
@@ -61,7 +61,7 @@
         place-items: center;
         grid-template-areas: 
         "carousel carousel carousel carousel carousel"
-        "category category . filter filter"
+        "category category category filter filter"
         "i1 i2 i3 i4 i5"
         ". . link_read . .";
         padding: 0 40px;
@@ -72,6 +72,13 @@
         display: block;
     }
 
+    .menu_cat_desktop {
+display: inline;
+    }
+
+    .menu_cat_mobile {
+        display: none;
+    }
     /*-------------Carousel-------------*/
 
     @keyframes slidy {
