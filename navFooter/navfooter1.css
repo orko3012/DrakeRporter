@@ -1,9 +1,7 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
-
 header{
     width: 100%;
     height:auto;
@@ -57,14 +55,14 @@ nav ul li a:hover{
 header nav ul li .nomLi{
     display: none;
 }
-nav ul #lienContact{
+/*nav ul #lienHome{
     background-color:rgba(172, 24, 24, 0.767);
     padding: 6px;
     border-radius:6px;
 }
-nav ul #lienContact:hover a{
+nav ul #lienHome:hover a{
     color:rgb(51, 51, 51);
-}
+}*/
 
 
 footer{
@@ -118,65 +116,6 @@ footer .droite a{
 footer .gauche i:hover, footer .droite a:hover{
     color: rgba(172, 24, 24, 0.767);
 }
-
-main{
-    background-color: #636468;
-    color: #EEE;
-    font-size: 20px;
-}
-
-body{
-    background-color: #636468;
-}
-
-
-#form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 7%;
-    padding-bottom: 7%;
-}
-
-.option:hover{
-    background-color: rgba(172, 24, 24, 0.767);
-}
-
-#password, #mail, #text, #selector{
-    width: 500px;
-}
-
-#text{
-    height: 100px;
-}
-
-.butt{
-    display: block;
-    padding:10px 20px;
-    border: 3px solid #FFFFFF;
-    margin: 0 auto 5%;
-    border-radius:2px;
-    text-decoration:none;
-    font-weight:300;
-    color:#FFFFFF;
-    text-align:center;
-    transition: all 0.2s;
-    width: fit-content;
-    width: -moz-fit-content;
-    background-color: none;
-}
-
-.butt:hover {
-    color:#000000;
-    background-color:#FFFFFF;
-    }
-
-@media screen and (max-width:961px){
-    #password, #mail, #text, #selector{
-        width: 300px;
-    }
-}
-
 @media screen and (min-width: 961px){
     header{
         display:flex;
@@ -184,7 +123,7 @@ body{
         background: linear-gradient(130deg, #EEE 37%,rgb(51, 51, 51) 37%);
         
         
-        
+         
     }
     header h1{
         width: 60%;
@@ -228,15 +167,15 @@ body{
     nav ul li .icone{
         display: none;
     }
-    nav ul #lienContact{
+    /*nav ul #lienHome{
         background-color:rgba(172, 24, 24, 0.767);
         padding-right: 10px;
         padding-left: 10px;
         border-radius:6px;
     }
-    nav ul #lienContact a:hover{
+    nav ul #lienHome a:hover{
         color: rgb(51, 51, 51);
-    }
+    }*/
     footer{
         display: flex;
         align-items: center;
