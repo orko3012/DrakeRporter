@@ -299,11 +299,18 @@ h2{
         flex-direction: row;
         padding-left: 80%;
     }
+
+    /*------Code added by Claire as a suggestion for the images----*/
     #pic{
         display: none;
     }
 
-    
+    #article p {
+        width: 900px;
+        margin-top: 5%;
+        font-size: 2rem;
+        color: #EEE;
+    }
 
     .galerie_grid {
         display: grid;
@@ -343,4 +350,5 @@ h2{
         grid-area: PB;
     }
    
+    /*------ End of Code added by Claire for the grid ---*/
 }
