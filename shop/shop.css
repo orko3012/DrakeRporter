@@ -1,4 +1,4 @@
-/*css shop*/
+/*-------------Shop CSS-------------*/
 * {
     margin: 0;
     padding: 0;
@@ -60,7 +60,7 @@
     link_read;
 }
 
-/*Desktop version*/
+/*-------------Desktop version-------------*/
 
 @media screen and (min-width: 961px) {
     .grid {
@@ -81,11 +81,45 @@
     }
 
     .menu_cat_desktop {
-display: inline;
+        display: inline;
     }
 
     .menu_cat_mobile {
         display: none;
+    }
+
+    /*-------------Menu category_desktop:"marchandises"-------------*/
+
+    .menu_cat_desktop ul{
+        list-style-type: none;
+        align-items:center;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu_cat_desktop li{
+        width: 25%;
+        text-align: center;
+    }
+
+    .menu_cat_desktop a{
+        display: inline-block;
+        text-decoration: none;
+        color: #000000;
+        border-bottom: 2px solid transparent;
+        padding: 10px 1em 10px 0em;
+    }
+
+    .menu_cat_desktop a:hover{
+        color:rgba(172, 24, 24, 0.767);
+        border-bottom: 2px solid rgba(245, 25, 25, 0.767);
+    }
+
+    .menu_cat_desktop{
+        width: 100%;
+        margin: 0 auto;
+        background-color: #ffffff;
+        position: sticky;
     }
     /*-------------Carousel-------------*/
 
@@ -120,40 +154,8 @@ display: inline;
         height: auto;
         overflow: hidden; 
     }
-    /*Menu categorie : marchandises*/
-
-    .menu_cat_desktop ul{
-        list-style-type: none;
-    }
-
-    .menu_cat_desktop li{
-        float: left;
-        width: 25%;
-        text-align: center;
-    }
-
-    .menu_cat_desktop a{
-        display: inline-flex;
-        text-decoration: none;
-        color: #000000;
-        border-bottom: 2px solid transparent;
-        padding: 10px 0px;
-
-    }
-
-    .menu_cat_desktop a:hover{
-        color: orange;
-        border-bottom: 2px solid gold;
-    }
-
-.menu_cat_desktop{
-    width: 100%;
-    margin: 0 auto;
-    background-color: #ffffff;
-    position: sticky;
-    top: 0px;
 }
-/* css header and footer*/
+/*-------------Css header-------------*/
 
 header{
     width: 100%;
@@ -217,6 +219,7 @@ nav ul #lienE-shop:hover a{
     color:rgb(51, 51, 51);
 }
 
+/*-------------Css footer-------------*/
 
 footer{
     font-family: 'Open Sans Condensed', sans-serif;
