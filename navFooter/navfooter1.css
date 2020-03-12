@@ -1,20 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin: 0px;
+    padding: 0px;
 }
-
-body {
-    background-color: #636468;
-}
-
-hr {
-    width: 80%;
-    display: block;
-    margin: 0 auto;
-}
-
-/*-----------header & nav -------------*/
 header{
     width: 100%;
     height:auto;
@@ -68,97 +55,15 @@ nav ul li a:hover{
 header nav ul li .nomLi{
     display: none;
 }
-nav ul #lienHome{
+/*nav ul #lienHome{
     background-color:rgba(172, 24, 24, 0.767);
     padding: 6px;
     border-radius:6px;
 }
 nav ul #lienHome:hover a{
     color:rgb(51, 51, 51);
-}
+}*/
 
-
-/*-----------Body-----------*/
-
-h1 {
-    margin: 5% 0;
-}
-
-#bio-container{
-    display: grid;
-    grid-template: repeat(4, auto) / 100% ;
-    grid-template-areas: 
-    "bio"
-    "name"
-    "picture"
-    "description";
-    justify-items: center;
-    margin-bottom: 5%;
-}
-
-#bio-container h1 {
-    grid-area: bio;
-}
-
-#bio-container h2 {
-    grid-area: name;
-}
-
-#bio-container img {
-    grid-area: picture;
-    margin: 5% 0;
-}
-
-#bio-container p {
-    grid-area: description;
-    width: 80%;
-    text-align: justify;
-    font-size: 1rem;
-    margin: 5% 0;
-    height: 300px;
-    overflow-y: scroll;
-}
-
-.article-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 5%;
-}
-
-.article-item {
-    height: 400px;
-    width: 300px;
-    background-color: grey;
-    margin: 5px 0;
-}
-
-section h1 {
-    text-align: center;
-}
-
-a.button {
-    display: block;
-    padding:10px 20px;
-    border: 3px solid #FFFFFF;
-    margin: 0 auto 5%;
-    border-radius:2px;
-    text-decoration:none;
-    font-weight:300;
-    color:#FFFFFF;
-    text-align:center;
-    transition: all 0.2s;
-    width: fit-content;
-    width: -moz-fit-content;
-    }
-
-    a.button:hover {
-    color:#000000;
-    background-color:#FFFFFF;
-    }
-
-
-/*-----------footer---------*/
 
 footer{
     font-family: 'Open Sans Condensed', sans-serif;
@@ -211,23 +116,19 @@ footer .droite a{
 footer .gauche i:hover, footer .droite a:hover{
     color: rgba(172, 24, 24, 0.767);
 }
-
-
-/* <<<<<<<-----------Desktop Styles------------->>>>>>> */
-
-@media only screen and (min-width: 961px) {
-
-    /*-------------header---------------*/
+@media screen and (min-width: 961px){
     header{
         display:flex;
         height: 200px;
         background: linear-gradient(130deg, #EEE 37%,rgb(51, 51, 51) 37%);
         
         
+         
     }
     header h1{
         width: 60%;
         font-size: 4rem;
+        
         
     }
     header nav {
@@ -248,11 +149,9 @@ footer .gauche i:hover, footer .droite a:hover{
     nav ul li a .nomLi{
         display: flex;
     }
-
     nav ul li a #shop{
         width: 100px;
     }
-
     nav ul li{
         font-size: 2.5rem;
         height: 100%;
@@ -268,7 +167,7 @@ footer .gauche i:hover, footer .droite a:hover{
     nav ul li .icone{
         display: none;
     }
-    nav ul #lienHome{
+    /*nav ul #lienHome{
         background-color:rgba(172, 24, 24, 0.767);
         padding-right: 10px;
         padding-left: 10px;
@@ -276,41 +175,7 @@ footer .gauche i:hover, footer .droite a:hover{
     }
     nav ul #lienHome a:hover{
         color: rgb(51, 51, 51);
-    }
-
-    /*-------------Body---------------*/
-    
-    #bio-container{
-        grid-template: repeat(3, auto) / 30% 70%;
-        grid-template-areas: 
-        "bio bio "
-        "picture name"
-        "picture description";
-    }
-
-    #bio-container h2, #bio-container p {
-        justify-self: flex-start;
-        margin-left: 5%;
-    }
-
-    #bio-container p {
-        height: auto;
-    }
-
-    #bio-container img{
-        margin-top: 0;
-    }
-
-
-    .article-container {
-        justify-content: space-around;
-        flex-direction: row;
-    }
-
-
-    /*-------------footer---------------*/
-
-
+    }*/
     footer{
         display: flex;
         align-items: center;
@@ -320,7 +185,6 @@ footer .gauche i:hover, footer .droite a:hover{
         flex-direction: row;
         
     }
-
     footer .pourGauche{
         width: 30%;
         display: flex;
@@ -339,7 +203,6 @@ footer .gauche i:hover, footer .droite a:hover{
         justify-content: stretch;
     
     }
-
     footer .droite{
         display: flex;
         text-align: end;
@@ -348,11 +211,9 @@ footer .gauche i:hover, footer .droite a:hover{
         flex-direction: row;
         width: 65%;
     }
-
-    footer .droite a {
+    footer .droite a{
         font-size: 1rem;
     }
-
     footer .gauche i{
         text-decoration: none;
         color: #EEE;

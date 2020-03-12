@@ -1,24 +1,205 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 	<meta charset="UTF-8">
-	<meta name="author" content="Claire, Guilaume, Paracelse, Julien, Léonard, Jérôme">
+	<meta name="author"
+		content="Claire Kodia, Guillaume Del Vecchio, Paracelse Itoua, Julien Rousseau, Léonard Fonteneau, Jérôme Potié, Stéphane Bour">
 	<meta name="description" content="A définir">
-	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="shop.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+		integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
 	<title>DrakeRporter</title>
 </head>
+
 <body>
 	<header>
-		<h1>Drake R. Porter</h1>
+		<h1>Dark<span>R</span>eporter</h1>
 		<nav>
-			
+			<ul>
+				<li id="lienHome"><a href="#" title="home" alt="go home"><span class="nomLi">Accueil</span> <span
+							class="icone"><i class="fas fa-home"></i></span></a></li>
+				<li id="lienBlog"><a href="#" title="Blog" alt="go Blog"><span class="nomLi">Blog</span> <span
+							class="icone"><i class="fas fa-camera"></i></span></a></li>
+				<li id="lienE-shop"><a href="#" title="E-shop" alt="go E-shop"><span id="shop" class="nomLi">
+							Boutique</span> <span class="icone"><i class="fas fa-cart-arrow-down"></i></span></a></li>
+				<li id="lienContact"><a href="#" title="Contact" alt="go Contact"><span class="nomLi">Contact</span>
+						<span class="icone"><i class="far fa-edit"></i></span></a></li>
+			</ul>
 		</nav>
 	</header>
-	<main>
-		
+
+	<main class="grid">
+
+		<section class="carousel">
+			<figure>
+				<a href="https://placeholder.com/"><img src="https://via.placeholder.com/1000x300.png?text=Image1"></a>
+				<a href="https://placeholder.com/"><img src="https://via.placeholder.com/1000x300.png?text=Image2"></a>
+				<a href="https://placeholder.com/"><img src="https://via.placeholder.com/1000x300.png?text=Image3"></a>
+				<a href="https://placeholder.com/"><img src="https://via.placeholder.com/1000x300.png?text=Image4"></a>
+			</figure>
+		</section>
+
+		<section class="menu_cat">
+			<form action="xxx.php" method="GET">
+				<select name="category_mobile" class="menu_cat_mobile">
+					<option value="category">Selectionner une marchandise</option>
+					<option value="Tout sélectionner"></option>
+					<option value="animals">Animaux</option>
+					<option value="drugs">Drogues</option>
+					<option value="organs">Organes</option>
+					<option value="weapons">Armes</option>
+					<option value="others">Divers</option>
+				</select>
+
+				<div class="menu_cat_desktop">
+					<ul>
+						<li><a href="#">Marchandises</li></a>
+						<li><a href="#">Animaux</li></a>
+						<li><a href="#">Drogues</li></a>
+						<li><a href="#">Organes</li></a>
+						<li><a href="#">Armes</li></a>
+						<li><a href="#">Divers</li></a>
+					</ul>
+				</div>
+		</section>
+
+		<section class="filter">
+			<form action="xxx.php" method="GET">
+				<select name="sorting">
+					<option value="defaut_sorting">Tri par défaut</option>
+					<option value="trending">Populaire</option>
+					<option value="news">Nouveautés</option>
+					<option value="promos">Promotions</option>
+					<option value="up_price">Prix Croissant</option>
+					<option value="low_price">Prix Décroissant</option>
+				</select>
+		</section>
+
+		<section class="operate">
+			<figure>
+				<a href="#"></a>
+				<br>
+				<figcaption> Commander
+				</figcaption>
+			</figure>
+		</section>
+
+		<section class="shopping">
+			<figure>
+				<a href="#"></a>
+				<br>
+				<figcaption> Votre Panier est vide (0)
+				</figcaption>
+			</figure>
+		</section>
+		<!--Voir si je met un hover ou hidden pour convertir le prix en €-->
+		<!--mettre un figcaption sur le prix avec un hover qui ajoute la page dans le panier-->
+		<figure class="img1">
+			<a href="http://google.com">
+				<figcaption>Prix : 14,47 Bitcoin
+					<!--Environ : 100 000 €-->
+				</figcaption>
+			</a>
+			<a href="https://placeholder.com/">
+				<img src="https://via.placeholder.com/150.png?text=I1">
+			</a>
+			<figcaption> Tigre blanc (bébé) <br>
+				<em>Origine : Sibérie </em>
+			</figcaption>
+		</figure>
+
+		<figure class="img2">
+			<a href="http://google.com">
+				<figcaption> Prix au kilo : 0,013 Bitcoin
+					<!--Environ : 88 €-->
+				</figcaption>
+			</a>
+			<a href="https://placeholder.com/">
+				<img src="https://via.placeholder.com/150.png?text=I2">
+			</a>
+			<figcaption> Opium <br>
+				<em> Origine : Afghanistan</em>
+			</figcaption>
+		</figure>
+
+		<figure class="img3">
+			<a href="http://google.com">
+				<figcaption> Prix : 2,90 Bitcoin
+					<!--Environ : 20 000 €-->
+				</figcaption>
+			</a>
+			<a href="https://placeholder.com/">
+				<img src="https://via.placeholder.com/150.png?text=I3">
+			</a>
+			<figcaption> Rein <br>
+				<em> Origine : Inde </em>
+			</figcaption>
+		</figure>
+
+		<figure class="img4">
+			<a href="http://google.com">
+				<figcaption> Prix : 0,038 Bitcoin
+					<!--Environ : 260 €-->
+				</figcaption>
+			</a>
+			<a href="https://placeholder.com/">
+				<img src="https://via.placeholder.com/150.png?text=I4">
+			</a>
+			<figcaption> Kalashnikov AK-74 <br>
+				<em> Origine : Ukraine</em>
+		</figure>
+
+		<figure class="img5">
+			<a href="http://google.com">
+				<figcaption> Prix : 9,69 Bitcoin</span>
+					<!--Environ : 68 000 €-->
+				</figcaption>
+			</a>
+			<a href="https://placeholder.com/">
+				<img src="https://via.placeholder.com/150.png?text=I5">
+			</a>
+			<figcaption> Diamant Jaune 4 carats <br>
+				<em> Origine : R. D. Congo </em>
+			</figcaption>
+		</figure>
+
+		<figure class="link_read">
+			<a href="#"></a>
+			<br>
+			<figcaption> Afficher plus de marchandises
+			</figcaption>
+		</figure>
+
 	</main>
+
 	<footer>
-		
+		<div class="pourGauche">
+			<div class="gauche">
+				<i class="fab fa-facebook-square"></i>
+
+			</div>
+			<div class="gauche">
+				<i class="fab fa-twitter-square"></i>
+
+			</div>
+			<div class="gauche">
+				<i class="fab fa-instagram"></i>
+			</div>
+		</div>
+		<div class="droite">
+			<a href="#" title="Home" alt="go Home">Accueil</a>
+			<a href="#" title="Blog" alt="go Blog">Blog</a>
+			<a href="#" title="E-shop" alt="go E-shop">Boutique</a>
+			<a href="#" title="Contact" alt="go Contact">Contact</a>
+
+		</div>
+
 	</footer>
+
 </body>
+
 </html>
