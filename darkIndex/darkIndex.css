@@ -8,6 +8,10 @@ body {
     background-color: #636468;
 }
 
+main {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
 hr {
     width: 80%;
     display: block;
@@ -86,12 +90,11 @@ h1 {
 
 #bio-container{
     display: grid;
-    grid-template: repeat(4, auto) / 100% ;
+    grid-template: repeat(3, auto) / 100% ;
     grid-template-areas: 
     "bio"
-    "name"
     "picture"
-    "description";
+    "namedescription";
     justify-items: center;
     margin-bottom: 5%;
 }
@@ -100,23 +103,37 @@ h1 {
     grid-area: bio;
 }
 
-#bio-container h2 {
-    grid-area: name;
-}
-
 #bio-container img {
     grid-area: picture;
     margin: 5% 0;
 }
 
-#bio-container p {
-    grid-area: description;
-    width: 80%;
+#bio-container div {
+    grid-area: namedescription;
+    width: 280px;
+    border: 4px black double;
+    border-radius: 5px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #EEE;
+}
+
+#bio-container div p {
     text-align: justify;
     font-size: 1rem;
     margin: 5% 0;
     height: 300px;
     overflow-y: scroll;
+}
+
+#bio-container div h2 {
+    text-align: center;
+    margin: 3% 0;
+    background-color: rgb(51,51,51);
+    color: #EEE;
+	padding: 6px 3px;
+    border-radius: 5px;
 }
 
 .article-container {
@@ -127,10 +144,61 @@ h1 {
 }
 
 .article-item {
-    height: 400px;
-    width: 300px;
-    background-color: grey;
     margin: 5px 0;
+    border: 4px black double;
+    border-radius: 5px;
+}
+
+
+.description {
+	text-align: center;
+	overflow: hidden;
+	white-space: pre-wrap;
+	height: 95px;
+	background-color: #EEE;
+}
+
+.description::first-letter {
+	font-size: 2rem;
+}
+
+figure {
+	width: 300px;
+	height: 400px;
+	padding: 10px;
+	display: grid;
+    grid-template-areas: 
+    "I1"
+    "I2"
+    "I3";
+    justify-items: center;
+    align-items: center;
+    background-color: #EEE;
+}
+
+figcaption {
+    grid-area: I1;
+	font-weight: bold;
+    text-align: center;
+	font-size: 1rem;
+    background-color: rgb(51,51,51);
+    color: #EEE;
+	padding: 6px 3px;
+    border-radius: 5px;
+    width: 280px;
+}
+
+figcaption > p {
+    grid-area: I3;
+}
+
+img {
+    grid-area: I2;
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: 280px;
+    height: auto;
+    align-self: center;
 }
 
 section h1 {
@@ -281,20 +349,27 @@ footer .gauche i:hover, footer .droite a:hover{
     /*-------------Body---------------*/
     
     #bio-container{
-        grid-template: repeat(3, auto) / 30% 70%;
+        grid-template: repeat(2, auto) / 30% 70%;
         grid-template-areas: 
         "bio bio "
-        "picture name"
-        "picture description";
+        "picture namedescription";
+        width: 90%;
+        margin: auto;
+        margin-bottom: 5%;
     }
 
-    #bio-container h2, #bio-container p {
+    #bio-container div {
         justify-self: flex-start;
-        margin-left: 5%;
+        height: auto;
+        width: auto;
     }
 
-    #bio-container p {
-        height: auto;
+    #bio-container div p {
+        overflow: visible;
+    }
+
+    #bio-container div h2 {
+        margin-bottom: 0;
     }
 
     #bio-container img{
@@ -306,6 +381,17 @@ footer .gauche i:hover, footer .droite a:hover{
         justify-content: space-around;
         flex-direction: row;
     }
+
+    .article-item {
+        transition: all 0.2s ease-in 0.2s;
+    }
+    
+    .article-item:hover {
+        border: 8px #555 double;
+        background-color: rgba(172,24,24,0.767);
+        letter-spacing:2px;
+        cursor: pointer;
+     }
 
 
     /*-------------footer---------------*/
