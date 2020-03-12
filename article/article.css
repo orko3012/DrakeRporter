@@ -123,6 +123,7 @@ footer .gauche i:hover, footer .droite a:hover{
 main{
    background-color:#636468; 
    color: #EEE;
+	 padding-bottom: 1.5em;
 }
 
 #pic, #article, #text, #bouton{
@@ -137,19 +138,23 @@ h2{
     color: rgba(172, 24, 24, 0.767);
 }
 
-#com{
-   display: flex;
-   justify-content: space-between;
-   flex-direction: column;
-   padding-left: 20px;
+#com {
+	display: flex;
+	/* justify-content: space-between; */
+	flex-direction: column;
+	/* padding-left: 20px; */
+	/* align-content: center; */
+	align-items: center;
 }
 
-.comment{
-    background-color: rgb(51,51,51);
-    max-width: 30em;
-    border-radius: 15px;
-    text-align: center;
-    margin-left: 100px;
+.comment {
+	background-color: rgb(51,51,51);
+	/* max-width: 30em; */
+	border-radius: 10px;
+	text-align: center;
+	/* margin-left: 100px; */
+	padding: 0.3em 0.5em;
+	margin: 0.3em auto;
 }
 
 #article{
@@ -157,13 +162,14 @@ h2{
     text-align: justify;
     margin: auto;
     color:rgb(51, 51, 51);
+		margin-bottom: 0.6em;
 }
 
 .butt{
     display: block;
     padding:10px 20px;
     border: 3px solid #FFFFFF;
-    margin: 0 auto 5%;
+    margin: 0.5em auto 5%;
     border-radius:2px;
     text-decoration:none;
     font-weight:300;
@@ -181,6 +187,12 @@ h2{
     }
 
 @media screen and (min-width: 961px){
+		#com {
+			align-items: flex-start;
+		}	
+		.butt {
+			margin:.6em;
+		}
     header{
         display:flex;
         height: 200px;
@@ -290,11 +302,12 @@ h2{
         display: flex;
     }
 
-    #bouton{
-        padding-right: 120px;
-        flex-direction: row;
-        padding-left: 80%;
-    }
+		#bouton {
+			/* padding-right: 120px; */
+			flex-direction: row;
+			/* padding-left: 80%; */
+			justify-content: flex-end;
+		}
     #pic{
         padding-left: 200px;
     }
