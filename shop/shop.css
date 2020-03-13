@@ -26,7 +26,7 @@ body {
     grid-template-rows: repeat(6, auto);
     grid-template-columns: repeat(2, 50%);
     grid-template-areas: 
-    "operate shopping"
+    ". shopping"
     "category category"
     "filter filter"
     "i1 i2"
@@ -37,10 +37,12 @@ body {
 
 .menu_cat {
     grid-area: category;
+    padding-bottom: 2rem;
 }
 
 .filter {
     grid-area: filter;
+    padding-bottom: 2rem;
 }
 
 .img1 {
@@ -59,21 +61,24 @@ body {
     grid-area: i4;
 }
 
-.operate {
-    grid-area: operate;
-    
+.operate{
+    display: none;
+}
+.carousel{
+    margin-bottom: 2rem;
 }
 
 .shopping {
     grid-area: shopping;
     color: #eee;
+    padding-bottom: 2rem;
 }
 
 a.link_read {
     grid-area: link_read;
 }
 
-a.link_read, a.operate  {
+a.link_read  {
         display: block;
         padding:10px 20px;
         border: 3px solid #FFFFFF;
@@ -86,6 +91,8 @@ a.link_read, a.operate  {
         transition: all 0.2s;
         width: fit-content;
         width: -moz-fit-content;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
         }
     
 a.link_read:hover, a.operate:hover,  {
