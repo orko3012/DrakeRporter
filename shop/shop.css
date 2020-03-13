@@ -242,6 +242,20 @@ nav ul #lienE-shop:hover a{
     color:rgb(51, 51, 51);
                             }
 
+.menu_cat_mobile {
+    color: #333333;
+    border-color: rgb(255, 255, 255);
+     width: 175px;
+                 }
+
+.style_sort{
+color: #333333;
+border-color: rgb(255, 255, 255);
+text-align: center;
+text-align-last: center;
+width: 90px;
+            }
+
 /*-------------Css footer-------------*/
 
 footer{
@@ -319,7 +333,7 @@ footer .gauche i:hover, footer .droite a:hover{
 
     .menu_cat_mobile {
         display: none;
-                        }
+                    }
 
     /*-------------Menu category_desktop:"marchandises"-------------*/
 
@@ -375,6 +389,9 @@ footer .gauche i:hover, footer .droite a:hover{
         width: 80%;
         max-width: 1000px;
         overflow: hidden; /*to hide the overflowing elements of the div*/
+        margin: 5px 0;
+        border: 4px white double;
+        border-radius: 5px;
                 }
     
     .carousel figure {
