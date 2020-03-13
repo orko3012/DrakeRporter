@@ -18,6 +18,7 @@ hr {
     margin: 0 auto;
 }
 
+
 /*-----------header & nav -------------*/
 header{
     width: 100%;
@@ -84,8 +85,10 @@ nav ul #lienHome:hover a{
 
 /*-----------Body-----------*/
 
-h1 {
+main h1 {
     margin: 5% 0;
+    color:#EEE;
+    font-size: 2em;
 }
 
 #bio-container{
@@ -113,7 +116,7 @@ h1 {
     width: 300px;
     border: 4px black double;
     border-radius: 5px;
-    padding: 0 10px;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     background-color: #EEE;
@@ -121,10 +124,10 @@ h1 {
 
 #bio-container div p {
     text-align: justify;
-    font-size: 1rem;
-    margin: 5% 0;
-    height: 300px;
+    font-size: 1.2rem;
+    margin: 2% 0 3% 0;
     overflow-y: scroll;
+    height: 300px;
 }
 
 #bio-container div h2 {
@@ -153,6 +156,7 @@ figure a {
     text-decoration: none;
     color: rgb(51, 51, 51);
 }
+
 
 .description {
 	text-align: center;
@@ -370,6 +374,7 @@ footer .gauche i:hover, footer .droite a:hover{
 
     #bio-container div p {
         overflow: visible;
+        height: min-content;
     }
 
     #bio-container div h2 {
@@ -396,6 +401,10 @@ footer .gauche i:hover, footer .droite a:hover{
         letter-spacing:2px;
         cursor: pointer;
      }
+
+     figure a:hover {
+        text-decoration: underline;
+    }
 
 
     /*-------------footer---------------*/
