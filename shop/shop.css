@@ -61,40 +61,37 @@ body {
 
 .operate {
     grid-area: operate;
-    display: flex;
-        justify-content: center;
-        color: #eee;
-        font-size: 0.9rem;
-        background-color: rgb(51, 51, 51);
-        border-radius: 5px;
-        font-variant: all-small-caps;
-        padding-top: auto rem;
+    
 }
 
 .shopping {
     grid-area: shopping;
-    display: flex;
-        justify-content: center;
-        color: #eee;
-        font-size: 0.9rem;
-        background-color: rgb(51, 51, 51);
-        border-radius: 5px;
-        font-variant: all-small-caps;
-        padding-top: auto rem;
+    color: #eee;
 }
 
-.link_read {
+a.link_read {
     grid-area: link_read;
-    display: flex;
-        justify-content: center;
-        color: #eee;
-        font-size: 0.7rem;
-        background-color: rgb(51, 51, 51);
-        padding: .5rem;
-        border-radius: 5px;
-        letter-spacing: .15em;
-        font-variant: all-small-caps;
 }
+
+a.link_read, a.operate  {
+        display: block;
+        padding:10px 20px;
+        border: 3px solid #FFFFFF;
+        margin: 0 auto 5%;
+        border-radius:2px;
+        text-decoration:none;
+        font-weight:300;
+        color:#FFFFFF;
+        text-align:center;
+        transition: all 0.2s;
+        width: fit-content;
+        width: -moz-fit-content;
+        }
+    
+a.link_read:hover, a.operate:hover,  {
+        color:#000000;
+        background-color:#FFFFFF;
+        }
 
 .price {
     display: flex;
