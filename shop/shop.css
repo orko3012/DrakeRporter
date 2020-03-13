@@ -405,6 +405,7 @@ footer .gauche i:hover, footer .droite a:hover{
         max-width: 1000px;
         overflow: hidden; /*to hide the overflowing elements of the div*/
         margin: 5px 0;
+        margin-bottom: 5%;
         border: 4px white double;
         border-radius: 5px;
                 }
