@@ -4,6 +4,13 @@
     padding: 0;
 }
 
+#bouton a{
+    text-decoration: none;
+    padding: 0.5rem;
+}
+textarea{
+    margin-bottom: 1rem;
+}
 header{
     width: 100%;
     height:auto;
@@ -190,6 +197,14 @@ h2{
 
 .galerie_grid {
     display: none;
+}
+
+.pseudo{
+    padding-left: 5px;
+}
+
+.time{
+    padding-left: 5px;
 }
 
 @media screen and (min-width: 961px){

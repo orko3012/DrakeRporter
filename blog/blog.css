@@ -120,7 +120,7 @@ section {
 .description {
 	text-align: center;
 	overflow: hidden;
-	height: 8rem;
+	/* height: 8rem; */
 	background-color: #eee;
 	cursor: pointer;
 }

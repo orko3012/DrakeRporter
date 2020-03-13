@@ -146,6 +146,10 @@ body{
     width: 500px;
 }
 
+#password, #mail, #selector{
+    height: 30px;
+}
+
 #text{
     height: 100px;
 }
