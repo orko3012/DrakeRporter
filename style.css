@@ -116,6 +116,28 @@ h2 {
     opacity: 0.5;
     /*border: 1px solid red;*/
 }
+
+#gallery p{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 30px;
+    color: blue;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin: 40px auto 30px auto;
+    width: 17%;
+    border: 2px double blueviolet;
+    }
+    #gallery p a{
+    text-decoration: none;
+    }
+    #gallery p:hover{
+    border-color: yellow;
+    }
+    #gallery p a:hover{
+    color: rgb(216, 83, 161);
+    }
+
 section:nth-of-type(2){
     background-color: rgb(243, 247, 31);
     padding: 50px 0;
@@ -225,6 +247,9 @@ nav ul li .icone{
 .photos>img{
     width: 100%;
     margin-bottom: 10px;
+}
+#gallery p{
+    width: 40%;
 }
 
 #photographer>div{    
