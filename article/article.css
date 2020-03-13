@@ -207,6 +207,21 @@ h2{
     padding-left: 5px;
 }
 
+
+#article p {
+    width: 350px;
+    margin-top: 5%;
+    font-size: 16px;
+    background-color: #EEE;
+    border: 4px black double;
+    border-radius: 5px;
+    padding: 20px 25px;
+    text-align: justify;
+    margin: 2% 0 3% 0;
+    overflow-y: scroll;
+    height: 500px;
+}
+
 @media screen and (min-width: 961px){
     header{
         display:flex;
