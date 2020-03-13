@@ -120,7 +120,7 @@ section {
 .description {
 	text-align: center;
 	overflow: hidden;
-	height: 7rem;
+	height: 8rem;
 	background-color: #eee;
 	cursor: pointer;
 }
@@ -131,6 +131,7 @@ section {
 
 .description:hover::after {
 	content: " ... ";
+
 }
 
 .description::first-letter {
@@ -139,7 +140,7 @@ section {
 
 figure {
 	width: 23.4rem;
-	height: 31.25rem;
+	height: 31.50rem;
 	padding: .4rem;
 	display: flex;
 	flex-direction: column;
@@ -173,7 +174,7 @@ a {
 	color: rgb(51, 51, 51);
 }
 
-a:hover {
+figure a:hover {
 	text-decoration: underline;
 }
 

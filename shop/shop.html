@@ -19,27 +19,28 @@
 		<h1 id="top">Dark<span>R</span>eporter</h1>
 		<nav>
 			<ul>
-				<li id="lienHome"><a href="../darkIndex/darkIndex.html" title="home" alt="go home"><span class="nomLi">Accueil</span> <span
-							class="icone"><i class="fas fa-home"></i></span></a></li>
-				<li id="lienBlog"><a href="../blog/blog.html" title="Blog" alt="go Blog"><span class="nomLi">Blog</span> <span
-							class="icone"><i class="fas fa-camera"></i></span></a></li>
+				<li id="lienHome"><a href="../darkIndex/darkIndex.html" title="home" alt="go home"><span
+							class="nomLi">Accueil</span> <span class="icone"><i class="fas fa-home"></i></span></a></li>
+				<li id="lienBlog"><a href="../blog/blog.html" title="Blog" alt="go Blog"><span class="nomLi">Blog</span>
+						<span class="icone"><i class="fas fa-camera"></i></span></a></li>
 				<li id="lienE-shop"><a href="#top" title="E-shop" alt="go E-shop"><span id="shop" class="nomLi">
-					E-shop</span> <span class="icone"><i class="fas fa-cart-arrow-down"></i></span></a></li>
-				<li id="lienContact"><a href="../contact/contact.html" title="Contact" alt="go Contact"><span class="nomLi">Contact</span>
+							E-shop</span> <span class="icone"><i class="fas fa-cart-arrow-down"></i></span></a></li>
+				<li id="lienContact"><a href="../contact/contact.html" title="Contact" alt="go Contact"><span
+							class="nomLi">Contact</span>
 						<span class="icone"><i class="far fa-edit"></i></span></a></li>
 			</ul>
 		</nav>
 	</header>
 
 	<main class="grid">
-		
+
 		<section class="carousel">
 			<figure>
-				<a href="https://placeholder.com/"><img  src="../images/slide/vrac.jpg" alt="Vrac"></a>
-				<a href="https://placeholder.com/"><img  src="../images/slide/armes.jpg" alt="Armes"></a>
-				<a href="https://placeholder.com/"><img  src="../images/slide/organes.jpg" alt="Organes"></a>
-				<a href="https://placeholder.com/"><img  src="../images/slide/drogues.jpg" alt="Drogues"></a>
-				<a href="https://placeholder.com/"><img  src="../images/slide/serpent.jpg" alt="Serpent"></a>
+				<a href="https://placeholder.com/"><img src="../images/slide/vrac.jpg" alt="Vrac"></a>
+				<a href="https://placeholder.com/"><img src="../images/slide/armes.jpg" alt="Armes"></a>
+				<a href="https://placeholder.com/"><img src="../images/slide/organes.jpg" alt="Organes"></a>
+				<a href="https://placeholder.com/"><img src="../images/slide/drogues.jpg" alt="Drogues"></a>
+				<a href="https://placeholder.com/"><img src="../images/slide/serpent.jpg" alt="Serpent"></a>
 			</figure>
 		</section>
 
@@ -55,16 +56,16 @@
 					<option value="others">Divers</option>
 				</select>
 			</form>
-				<div class="menu_cat_desktop">
-					<ul>
-						<li><a href="#">Marchandises</li></a>
-						<li><a href="#">Animaux</li></a>
-						<li><a href="#">Armes</li></a>
-						<li><a href="#">Organes</li></a>
-						<li><a href="#">Drogues</li></a>
-						<li><a href="#">Divers</li></a>
-					</ul>
-				</div>
+			<div class="menu_cat_desktop">
+				<ul>
+					<li><a class="menu_desktop" href="#">Marchandises</li></a>
+					<li><a class="menu_desktop" href="#">Animaux</li></a>
+					<li><a class="menu_desktop" href="#">Armes</li></a>
+					<li><a class="menu_desktop" href="#">Organes</li></a>
+					<li><a class="menu_desktop" href="#">Drogues</li></a>
+					<li><a class="menu_desktop" href="#">Divers</li></a>
+				</ul>
+			</div>
 		</section>
 
 		<section class="filter">
@@ -79,99 +80,63 @@
 				</select>
 		</section>
 
-		<section class="operate">
-			<figure>
-				<a href="#"></a>
-				<br>
-				<figcaption> Commander
-				</figcaption>
-			</figure>
-		</section>
+		<a href="#" class="operate">Commander</a>
 
-		<section class="shopping">
-			<figure>
-				<a href="#"></a>
-				<br>
-				<figcaption> Votre Panier est vide (0)
-				</figcaption>
-			</figure>
-		</section>
+		<p class="shopping"> Votre Panier est vide (0) </p>.
+		
 		<!--Voir si je met un hover ou hidden pour convertir le prix en €-->
 		<!--mettre un figcaption sur le prix avec un hover qui ajoute la page dans le panier-->
-		<figure class="img1">
-			<a href="https://placeholder.com/">
-				<figcaption class="price"> Prix : 14,47 Bitcoin
-					<!--Environ : 100 000 €-->
-				</figcaption>
-			</a>
-			<a href="https://placeholder.com/">
-				<img  src="../images/tigre.jpg" alt="Tigre blanc">
-			</a>
-			<figcaption> Tigre blanc (bébé) <br>
-				<em>Origine : Sibérie </em>
-			</figcaption>
-		</figure>
+		<article class="article-item img1">
+			<figure>
+				<figcaption>Prix : 14,47 Bitcoin</figcaption>
+				<img src="../images/tigre.jpg" alt="Image de tigre" />
+				<a href="#" title="#">
+					<p class="description">Tigre blanc (bébé) <br><em>Origine : Sibérie </em></p>
+				</a>
+			</figure>
+		</article>
 
-		<figure class="img2">
-			<a href="https://placeholder.com/">
-				<figcaption class="price"> Prix : 0,038 Bitcoin
-					<!--Environ : 260 €-->
-				</figcaption>
-			</a>
-			<a href="https://placeholder.com/">
-				<img  src="../images/ak74.png" alt="Kalashnikov AK-74">
-			</a>
-			<figcaption> Kalashnikov AK-74 <br>
-				<em> Origine : Ukraine</em>
-		</figure>
+		<article class="article-item img2">
+			<figure>
+				<figcaption>Prix : 0,038 Bitcoin</figcaption>
+				<img src="../images/ak74.png" alt="Image de AK74" />
+				<a href="#" title="#">
+					<p class="description">Kalashnikov AK-74 <br><em> Origine : Ukraine</em></p>
+				</a>
+			</figure>
+		</article>
 
-		<figure class="img3">
-			<a href="https://placeholder.com/">
-				<figcaption class="price"> Prix : 2,90 Bitcoin
-					<!--Environ : 20 000 €-->
-				</figcaption>
-			</a>
-			<a href="https://placeholder.com/">
-				<img  src="../images/coeur.jpg" alt="Rein">
-			</a>
-			<figcaption> Rein d'adulte <br>
-				<em> Origine : Inde </em>
-			</figcaption>
-		</figure>
+		<aricle class="article-item img3">
+			<figure>
+				<figcaption>Prix : 2,90 Bitcoin</figcaption>
+				<img src="../images/coeur.jpg" alt="Image de coeur" />
+				<a href="#" title="#">
+					<p class="description">Coeur d'adulte <br><em> Origine : Inde </em></p>
+				</a>
+			</figure>
+		</aricle>
 
-		<figure class="img4">
-			<a href="https://placeholder.com/">
-				<figcaption class="price"> Prix au kilo : 0,013 Bitcoin
-					<!--Environ : 88 €-->
-				</figcaption>
-			</a>
-			<a href="https://placeholder.com/">
-				<img  src="../images/opium.jpg" alt="Opium">
-			</a>
-			<figcaption> Opium <br>
-				<em> Origine : Afghanistan</em>
-			</figcaption>
-		</figure>
+		<aricle class="article-item img4">
+			<figure>
+				<figcaption>Prix au litre : 0,013 Bitcoin</figcaption>
+				<img src="../images/opium.jpg" alt="Opium">
+				<a href="#" title="#">
+					<p class="description">Opium <br><em> Origine : Afghanistan</em></p>
+				</a>
+			</figure>
+		</aricle>
 
-		<figure class="img5">
-			<a href="https://placeholder.com/">
-				<figcaption class="price"> Prix : 9,69 Bitcoin</span>
-					<!--Environ : 68 000 €-->
-				</figcaption>
-			</a>
-			<a href="https://placeholder.com/">
-				<img  src="../images/diams.jpg" alt="Diamant">
-			</a>
-			<figcaption> Diamant Jaune 4 carats <br>
-				<em> Origine : R. D. Congo </em>
-			</figcaption>
-		</figure>
-
-		<figure class="link_read">
-			<a href="#"></a>
-			<br>
-			<figcaption> Afficher plus de marchandises</figcaption>
-		</figure>
+		<aricle class="article-item img5">
+			<figure>
+				<figcaption>Prix : 9,69 Bitcoin</figcaption>
+				<img src="../images/diams.jpg" alt="Diamant"/>
+				<a href="#" title="#">
+					<p class="description">Diamant Jaune 4 carats <br><em> Origine : R. D. Congo </em></p>
+				</a>
+			</figure>
+		</aricle>
+		
+		<a href="#" class="link_read">Afficher plus de marchandise</a>
 
 	</main>
 
