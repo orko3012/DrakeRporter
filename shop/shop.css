@@ -437,6 +437,7 @@ footer .gauche i:hover, footer .droite a:hover{
         flex-direction: row;
         justify-content: stretch;
                      }
+                     
     footer .droite{
         display: flex;
         text-align: end;
