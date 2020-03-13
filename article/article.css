@@ -4,6 +4,13 @@
     padding: 0;
 }
 
+#bouton a{
+    text-decoration: none;
+    padding: 0.5rem;
+}
+textarea{
+    margin-bottom: 1rem;
+}
 header{
     width: 100%;
     height:auto;
