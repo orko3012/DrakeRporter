@@ -235,8 +235,9 @@ h2{
     }
 
     #com{
-        align-items: flex-start;
+        align-items: center;
     }
+
 
     .comment{
         margin-left: 40px;
