@@ -2,12 +2,12 @@
 
 html {
 	font-size: 16px;
-}
+    }
 
 body {
 	font-family: 'Open Sans Condensed', sans-serif;
 	background-color: #636468;
-}
+    }
 
 /*-------------Mobile version-------------*/
 
@@ -15,11 +15,11 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+    }
 
 .carousel, .img5, .menu_cat_desktop {
     display: none;
-}
+                                    }
 
 .grid {
     display: grid;
@@ -33,50 +33,51 @@ body {
     "i3 i4"
     "link_read link_read";
     place-items: center;
-}
+        }
 
 .menu_cat {
     grid-area: category;
     padding-bottom: 2rem;
-}
+            }
 
 .filter {
     grid-area: filter;
     padding-bottom: 2rem;
-}
+        }
 
 .img1 {
     grid-area: i1;
-}
+        }
 
 .img2 {
     grid-area: i2;
-}
+        }
 
 .img3 {
     grid-area: i3;
-}
+        }
 
 .img4 {
     grid-area: i4;
-}
+        }
 
 .operate{
     display: none;
-}
+        }
+
 .carousel{
     margin-bottom: 2rem;
-}
+        }
 
 .shopping {
     grid-area: shopping;
     color: #eee;
     padding-bottom: 2rem;
-}
+            }
 
 a.link_read {
     grid-area: link_read;
-}
+            }
 
 a.link_read  {
         display: block;
@@ -93,12 +94,12 @@ a.link_read  {
         width: -moz-fit-content;
         margin-top: 2rem;
         margin-bottom: 2rem;
-        }
+                }
     
-a.link_read:hover, a.operate:hover,  {
-        color:#000000;
-        background-color:#FFFFFF;
-        }
+a.link_read:hover, a.operate:hover  {
+        color: #000000;
+        background-color: #FFFFFF;
+                                        }
 
 .price {
     display: flex;
@@ -108,8 +109,7 @@ a.link_read:hover, a.operate:hover,  {
         background-color: rgb(51, 51, 51);
         border-radius: 5px;
         letter-spacing: auto
-}
-}
+        }
 
 /*-------------Css header-------------*/
 
@@ -120,7 +120,8 @@ header{
     background: #EEE;
     font-family: 'Open Sans Condensed', sans-serif;
     border-radius: 0px 0px 20px 20px;
-}
+        }
+
 header h1{
     width: 100%;
     font-size: 2em;
@@ -128,17 +129,19 @@ header h1{
     display: flex;
     margin: 0 auto 0 auto;
     justify-content: center;
-}
+        }
+
 header h1 span{
     color: rgba(172, 24, 24, 0.767);
     font-size: 130%;
     font-family: 'Permanent Marker', cursive;
-}
+                }
 header nav{
     width: 100%;
     background: rgb(51,51,51);
     padding: 12px;
-}
+            }
+
 header nav ul{
     display: flex;
     flex-direction: row;
@@ -154,26 +157,31 @@ nav ul li{
     align-items:center;
     display: flex;
     color:white;
-}
+        }
+
 header nav ul li a{
     width: 20%;
     color: #EEE
 
-}
+                    }
+
 nav ul li a:hover{
     color:rgba(172, 24, 24, 0.767);
-}
+                }
+
 header nav ul li .nomLi{
     display: none;
-}
+                        }
+
 nav ul #lienE-shop{
     background-color:rgba(172, 24, 24, 0.767);
     padding: 6px;
     border-radius:6px;
-}
+                    }
+
 nav ul #lienE-shop:hover a{
     color:rgb(51, 51, 51);
-}
+                            }
 
 /*-------------Css footer-------------*/
 
@@ -186,7 +194,8 @@ footer{
     width: 100%;
     padding: 0px;
     background-color:rgb(51, 51, 51);
-}
+     }
+
 footer .gauche{
     display: flex;
     align-items: center;
@@ -196,19 +205,21 @@ footer .gauche{
     width: 100%;
     padding: 0px;
     margin: 0px;
-}
+                }
+
 .pourGauche{
     display: flex;
     width: 30%;
     flex-direction: row;
+            }
 
-}
 footer .gauche i{
     text-decoration: none;
     color: #EEE;
     padding: 5px;
     font-size: 2rem;
-}
+                }
+
 footer .droite{
     display: flex;
     align-items: center;
@@ -217,17 +228,18 @@ footer .droite{
     flex-direction: column;
     width: 100%;
     padding: 0px;
-    
-}
+                }
+
 footer .droite a{
     text-decoration: none;
     color: #EEE;
     padding: 5px;
-    font-size: 1rem;
-}
+    font-size: 1rem;    
+                }
+
 footer .gauche i:hover, footer .droite a:hover{
     color: rgba(172, 24, 24, 0.767);
-}
+                                                }
 
 /*-------------Desktop version-------------*/
 
@@ -243,16 +255,16 @@ footer .gauche i:hover, footer .droite a:hover{
         "i1 i2 i3 i4 i5"
         ". . link_read . .";
         padding: 0 40px;
-    }
+            }
 
     .img5 {
         grid-area: i5;
         display: block;
-    }
+            }
 
     .menu_cat_mobile {
         display: none;
-    }
+                        }
 
     /*-------------Menu category_desktop:"marchandises"-------------*/
 
@@ -261,12 +273,12 @@ footer .gauche i:hover, footer .droite a:hover{
         align-items: center;
         display: flex;
         justify-content: space-around;
-    }
+                        }
 
     .menu_cat_desktop li{
         width: 25%;
         text-align: center;
-    }
+                        }
 
     .menu_cat_desktop a{
         display: inline-block;
@@ -274,12 +286,12 @@ footer .gauche i:hover, footer .droite a:hover{
         color: #eee;
         border-bottom: 2px solid transparent;
         padding: 10px 1em 10px 0em;
-    }
+                        }
 
     .menu_cat_desktop a:hover{
         color:rgba(172, 24, 24, 0.767);
         border-bottom: 2px solid rgba(245, 25, 25, 0.767);
-    }
+                                }
 
     .menu_cat_desktop{
         display: flex;
@@ -287,7 +299,7 @@ footer .gauche i:hover, footer .droite a:hover{
         margin: 0 auto;
         background-color: rgb(51, 51, 51);
         position: sticky;
-    }
+                        }
    
     /*-------------Carousel-------------*/
 
@@ -300,7 +312,7 @@ footer .gauche i:hover, footer .droite a:hover{
         65% { left: -200%; }
         85% { left: -300%; }
         100% { left: -300%; }
-    }
+                     }
     
     .carousel {
         display: block;
@@ -308,43 +320,49 @@ footer .gauche i:hover, footer .droite a:hover{
         width: 80%;
         max-width: 1000px;
         overflow: hidden; /*to hide the overflowing elements of the div*/
-    }
+                }
     
     .carousel figure {
         position: relative; /*to enable the move of the figure during the animation*/
         width: 500%; 
         font-size: 0;
         animation: 15s slidy infinite;
-    }
+                    }
     
     .carousel figure img {
         width: 20%;
         height: auto;
         overflow: hidden; 
-    }
+                            }
+
     /*-------------menu desktop a_link-------------*/
+
     .menu_desktop {
         padding: 10px auto 10px auto ;
         background-color: #636468;
-    }
+                    }
+
     /*-------------Header Responsive desktop-------------*/
 
     header{
         display:flex;
         height: 200px;
         background: linear-gradient(130deg, #EEE 37%,rgb(51, 51, 51) 37%);
-    }
+             }
 
     header h1{
         width: 60%;
         font-size: 4rem;
-    }
+                }
+
     header nav {
         background: none;
-    }
+                 }
+
     nav{
         width: 40%;
-    }
+         }
+
     nav ul{
         display: flex;
         flex-direction: row;
@@ -352,14 +370,16 @@ footer .gauche i:hover, footer .droite a:hover{
         justify-content: space-around;
         width: 100%;
         height: 100%;
-        
-    }
+             }
+
     nav ul li a .nomLi{
         display: flex;
-    }
+                        }
+
     nav ul li a #shop{
         width: 100px;
-    }
+                        }
+
     nav ul li{
         font-size: 2.5rem;
         height: 100%;
@@ -367,23 +387,27 @@ footer .gauche i:hover, footer .droite a:hover{
         align-items:center;
         display: flex;
         color:white;
-    }
+                }
+
     nav ul li a {
         text-decoration: none;
         color:white;
-    }
+                  }
+
     nav ul li .icone{
         display: none;
-    }
+                     }
+
     nav ul #lienE-shop{
         background-color:rgba(172, 24, 24, 0.767);
         padding-right: 10px;
         padding-left: 10px;
         border-radius:6px;
-    }
+                      }
+
     nav ul #lienE-shop a:hover{
         color: rgb(51, 51, 51);
-    }
+                                }
 
 /*-------------Footer Responsive desktop-------------*/
 
@@ -393,9 +417,9 @@ footer .gauche i:hover, footer .droite a:hover{
         justify-content: space-between;
         flex-wrap: wrap;
         padding: 30px;
-        flex-direction: row;
-        
-    }
+        flex-direction: row; 
+             }
+
     footer .pourGauche{
         width: 30%;
         display: flex;
@@ -403,7 +427,7 @@ footer .gauche i:hover, footer .droite a:hover{
         justify-content: center;
         flex-wrap: wrap;
         text-align: left;
-    }
+                        }
     
     footer .gauche{
         display: flex;
@@ -412,8 +436,7 @@ footer .gauche i:hover, footer .droite a:hover{
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: stretch;
-    
-    }
+                     }
     footer .droite{
         display: flex;
         text-align: end;
@@ -421,14 +444,16 @@ footer .gauche i:hover, footer .droite a:hover{
         flex-wrap: wrap;
         flex-direction: row;
         width: 65%;
-    }
+                    }
+
     footer .droite a{
         font-size: 1rem;
-    }
+                    }
+
     footer .gauche i{
         text-decoration: none;
         color: #EEE;
         padding: 5px;
         font-size: 2rem;
-    }
+                     }
 }
