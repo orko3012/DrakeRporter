@@ -16,6 +16,7 @@ hr {
     width: 80%;
     display: block;
     margin: 0 auto;
+    border: 1px solid lightgrey;
 }
 
 
@@ -116,7 +117,7 @@ main h1 {
     width: 300px;
     border: 4px black double;
     border-radius: 5px;
-    padding: 0 10px;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     background-color: #EEE;
@@ -124,10 +125,10 @@ main h1 {
 
 #bio-container div p {
     text-align: justify;
-    font-size: 1rem;
-    margin: 5% 0;
-    height: 300px;
+    font-size: 1.2rem;
+    margin: 2% 0 3% 0;
     overflow-y: scroll;
+    height: 300px;
 }
 
 #bio-container div h2 {
@@ -374,6 +375,7 @@ footer .gauche i:hover, footer .droite a:hover{
 
     #bio-container div p {
         overflow: visible;
+        height: min-content;
     }
 
     #bio-container div h2 {
