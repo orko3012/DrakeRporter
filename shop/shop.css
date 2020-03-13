@@ -64,12 +64,11 @@ body {
     display: flex;
         justify-content: center;
         color: #eee;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         background-color: rgb(51, 51, 51);
-        padding: .5rem;
         border-radius: 5px;
-        letter-spacing: .15em;
         font-variant: all-small-caps;
+        padding-top: auto rem;
 }
 
 .shopping {
@@ -77,12 +76,11 @@ body {
     display: flex;
         justify-content: center;
         color: #eee;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         background-color: rgb(51, 51, 51);
-        padding: .5rem;
         border-radius: 5px;
-        letter-spacing: .15em;
         font-variant: all-small-caps;
+        padding-top: auto rem;
 }
 
 .link_read {
@@ -227,20 +225,17 @@ footer .gauche i:hover, footer .droite a:hover{
     color: rgba(172, 24, 24, 0.767);
 }
 
-    
-    
 /*-------------Desktop version-------------*/
 
 @media screen and (min-width: 961px){
 
     .grid {
-        grid-template-rows: repeat(5, auto);
+        grid-template-rows: repeat(4, auto);
         grid-template-columns: repeat(5, 20%);
         place-items: center;
         grid-template-areas: 
         "carousel carousel carousel carousel carousel"
-        "category category category category filter"
-        ". . . operate shopping"
+        "category category filter operate shopping" 
         "i1 i2 i3 i4 i5"
         ". . link_read . .";
         padding: 0 40px;
@@ -272,7 +267,7 @@ footer .gauche i:hover, footer .droite a:hover{
     .menu_cat_desktop a{
         display: inline-block;
         text-decoration: none;
-        color: #000000;
+        color: #eee;
         border-bottom: 2px solid transparent;
         padding: 10px 1em 10px 0em;
     }
@@ -286,10 +281,10 @@ footer .gauche i:hover, footer .droite a:hover{
         display: flex;
         width: 100%;
         margin: 0 auto;
-        background-color: #ffffff;
+        background-color: rgb(51, 51, 51);
         position: sticky;
     }
-
+   
     /*-------------Carousel-------------*/
 
     @keyframes slidy {
@@ -323,8 +318,12 @@ footer .gauche i:hover, footer .droite a:hover{
         height: auto;
         overflow: hidden; 
     }
-
-    /*-------------Responsive desktop-------------*/
+    /*-------------menu desktop a_link-------------*/
+    .menu_desktop {
+        padding: 10px auto 10px auto ;
+        background-color: #636468;
+    }
+    /*-------------Header Responsive desktop-------------*/
 
     header{
         display:flex;
@@ -381,6 +380,9 @@ footer .gauche i:hover, footer .droite a:hover{
     nav ul #lienE-shop a:hover{
         color: rgb(51, 51, 51);
     }
+
+/*-------------Footer Responsive desktop-------------*/
+
     footer{
         display: flex;
         align-items: center;
