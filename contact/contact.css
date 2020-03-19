@@ -175,6 +175,24 @@ body{
     background-color:#FFFFFF;
     }
 
+
+/*PINK MODE*/
+:root {
+  --background-color:#636468;
+  --text-color: black;
+  }
+
+[data-theme="pink"] {
+  --background-color: pink;
+  --text-color:green;
+}
+
+main, body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+
 @media screen and (max-width:961px){
     #password, #mail, #text, #selector{
         width: 300px;
