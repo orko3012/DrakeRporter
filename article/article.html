@@ -82,6 +82,58 @@
 		<!--<input type="button" class="butt" id="button2" value="Partager"/>-->
 		<a class="butt">Partager</a>
 		</div><br/>
+<!-- secret quizz-->
+<p class="quizz">Have fun with David :</p>
+<form oninput="score.value=parseInt(question1.value || 0)+parseInt(question2.value || 0)+parseInt(question3.value || 0)+parseInt(question4.value || 0)+parseInt(question5.value || 0)+parseInt(question6.value || 0)">
+	<div class="quizz">
+	  <p>Sailor and ...?</p>
+	  <input id="question1-answer1" name="question1" type="radio" value="1">
+	  <label for="question1-answer1">Lula</label>
+	  <input id="question1-answer2" name="question1" type="radio" value="0">
+	  <label for="question1-answer2">Luca</label>
+	</div>
+	<div class="quizz">
+	  <p>Twin...?</p>
+	  <input id="question2-answer1" name="question2" type="radio" value="0">
+	  <label for="question2-answer1">Pricks</label>
+	  <input id="question2-answer2" name="question2" type="radio" value="1">
+	  <label for="question2-answer2">Peaks</label>
+	</div>
+	<div class="quizz">
+	  <!--todo: make this question working-->
+	  <p>Inland...?</p>
+	  <input id="question3-answer1" name="question3" type="radio" value="0">
+	  <label for="question3-answer1">Vampire</label>
+	  <input id="question3-answer2" name="question3" type="radio" value="1">
+	  <label for="question3-answer2">Empire</label>
+	</div>
+	<div class="quizz">
+		<p>Mulholland...?</p>
+		<input id="question2-answer1" name="question4" type="radio" value="1">
+		<label for="question2-answer1">Drive</label>
+		<input id="question2-answer2" name="question4" type="radio" value="0">
+		<label for="question2-answer2">Five</label>
+	  </div>
+	  <div class="quizz">
+		<p>Lost...?</p>
+		<input id="question2-answer1" name="question5" type="radio" value="0">
+		<label for="question2-answer1">Subway</label>
+		<input id="question2-answer2" name="question5" type="radio" value="1">
+		<label for="question2-answer2">Highway</label>
+	  </div>
+	  <div class="quizz">
+		<p>Ronnie...?</p>
+		<input id="question2-answer1" name="question6" type="radio" value="0">
+		<label for="question2-answer1">Socket</label>
+		<input id="question2-answer2" name="question6" type="radio" value="95">
+		<label for="question2-answer2">Rocket</label>
+	  </div>
+	<p class="quizz">Your score is <output name="score">0</output></p>
+  </form>
+  
+
+
+
 		<div id="com">
 		<p class="pseudo">TabarNAK74</p>
 		<P class="time">(il y a 1H)</p>
@@ -119,6 +171,7 @@
 
 		</div>
 	</footer>
+	<script src="article.js"></script>
 </body>
 </html>
 
