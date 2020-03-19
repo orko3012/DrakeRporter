@@ -1,6 +1,6 @@
 const butt = document.getElementById("button")
 butt.onclick=()=>{
-    alert("hello")
+    alert("Hello World !")
 }
 
 function switchTheme(event) {
