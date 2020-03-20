@@ -406,3 +406,13 @@ h2{
    
     /*------ End of Code added by Claire for the grid ---*/
 }
+/*JS*/
+.fush{
+    color: fuchsia;
+}
+.red{
+    color:red;
+}
+.titl{
+    transition: color 1s;
+}

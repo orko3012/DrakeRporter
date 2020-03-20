@@ -24,7 +24,7 @@
 	</header>
 	<main>
 		<br/>
-		<h2>Panda meat lover</h2><br/><br/>
+		<h2 id="titre2" class="titl">Panda meat lover</h2><br/><br/>
 
 		<section class="galerie_grid">
 			<img src="../images/article/pandaeat.jpg" alt="Panda qui mange son petit">
@@ -85,7 +85,7 @@
 <!-- secret quizz-->
 <p class="quizz">Have fun with David :</p>
 <form oninput="score.value=parseInt(question1.value || 0)+parseInt(question2.value || 0)+parseInt(question3.value || 0)+parseInt(question4.value || 0)+parseInt(question5.value || 0)+parseInt(question6.value || 0)">
-	<div class="quizz">
+	<div class="quizz" >
 	  <p>Sailor and ...?</p>
 	  <input id="question1-answer1" name="question1" type="radio" value="1">
 	  <label for="question1-answer1">Lula</label>
@@ -128,7 +128,7 @@
 		<input id="question2-answer2" name="question6" type="radio" value="95">
 		<label for="question2-answer2">Rocket</label>
 	  </div>
-	<p class="quizz">Your score is <output name="score">0</output></p>
+	<p class="quizz">Your score is <output id="total" name="score">0</output></p>
   </form>
   
 
