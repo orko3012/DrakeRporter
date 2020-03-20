@@ -407,8 +407,11 @@ h2{
     /*------ End of Code added by Claire for the grid ---*/
 }
 /*JS*/
+.black{
+    color: black;
+}
 .fush{
-    color: fuchsia;
+    color:fuchsia
 }
 .red{
     color:red;
