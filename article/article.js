@@ -13,3 +13,4 @@ const titl=document.querySelector(".titl")
 window.setInterval(()=>{
     titl.classList.toggle( "red")
 }, 1000)
+

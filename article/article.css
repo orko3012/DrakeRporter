@@ -147,7 +147,7 @@ body{
 h2{
     text-align: center;
     font-size: 55px;
-    color: #EEE /* former color rgba(172, 24, 24, 0.767);*/
+    color: #EEE; /* former color rgba(172, 24, 24, 0.767);*/
 }
 
 #com{
